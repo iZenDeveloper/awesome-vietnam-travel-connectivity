@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam Tourist Connectivity Simulator 2026 - By Kovitel</title>
+<style>
+  :root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-red: #ef4444;
+    --accent-green: #10b981;
+    --accent-blue: #3b82f6;
+    --border-color: #334155;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .game-container {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 640px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .hud {
+    background: #090d16;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .hud-stat { display: flex; align-items: center; gap: 6px; }
+  .screen { padding: 32px 28px; }
+  h1 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .tagline { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; line-height: 1.5; }
+  .story-card {
+    background: #0b1120;
+    border-left: 4px solid var(--accent-red);
+    padding: 18px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #e2e8f0;
+  }
+  .options-grid { display: flex; flex-direction: column; gap: 12px; }
+  .btn-choice {
+    background: #1e293b;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: #f8fafc;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-choice:hover {
+    background: #334155;
+    border-color: var(--accent-red);
+    transform: translateY(-2px);
+  }
+  .btn-action {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 18px;
+    transition: opacity 0.2s;
+  }
+  .btn-action:hover { opacity: 0.9; }
+  .badge-tag {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: #334155;
+    color: #94a3b8;
+  }
+  .cta-box {
+    margin-top: 24px;
+    background: #1e1b4b;
+    border: 1px solid #4338ca;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .cta-box a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .cta-box a:hover { text-decoration: underline; }
+  .feedback-box {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  .feedback-success { background: rgba(16, 185, 129, 0.15); border: 1px solid var(--accent-green); color: #6ee7b7; }
+  .feedback-danger { background: rgba(239, 68, 68, 0.15); border: 1px solid var(--accent-red); color: #fca5a5; }
+</style>
+</head>
+<body>
+
+<div class="game-container">
+  <div class="hud" id="hudBar" style="display:none;">
+    <div class="hud-stat">💵 Cash: <span id="statCash">$100</span></div>
+    <div class="hud-stat">⚡ Ping: <span id="statPing">18ms</span></div>
+    <div class="hud-stat">🤯 Stress: <span id="statStress">10%</span></div>
+    <div class="hud-stat">🏆 Score: <span id="statScore">100</span></div>
+  </div>
+
+  <div class="screen" id="appScreen">
+    <!-- Intro Screen -->
+    <div id="introView">
+      <h1>🇻🇳 Vietnam Connectivity Simulator</h1>
+      <p class="tagline">You have just landed in Vietnam. Can you survive airport touts, navigate remote mountain passes on a scooter, and maintain 5G internet across 2,000 km?</p>
+      
+      <div class="story-card">
+        <strong>Mission Briefing:</strong><br>
+        Navigate 4 real-world travel challenges. Make the right telecom decisions to keep your connection speed high, save money, and avoid getting stranded without GPS.
+      </div>
+
+      <button class="btn-action" onclick="startGame()">Start Journey 🚀</button>
+      
+      <div style="margin-top: 24px; font-size: 0.8rem; text-align: center; color: var(--text-muted);">
+        Powered by <a href="https://kovitel.com" target="_blank" style="color: var(--accent-red); font-weight: bold;">Kovitel.com</a> — Vietnam Viettel 5G eSIM Provider
+      </div>
+    </div>
+
+    <!-- Active Stage Screen -->
+    <div id="stageView" style="display:none;">
+      <h2 id="stageTitle" style="font-size: 1.3rem; margin-bottom: 12px; color: #fff;"></h2>
+      <div id="feedbackArea"></div>
+      <div class="story-card" id="stageStory"></div>
+      <div class="options-grid" id="choicesGrid"></div>
+    </div>
+
+    <!-- End Game Screen -->
+    <div id="endView" style="display:none;">
+      <h1 id="endHeading">🎉 Journey Complete!</h1>
+      <p class="tagline" id="endSummary"></p>
+      
+      <div class="story-card" id="endDetails"></div>
+
+      <div class="cta-box">
+        <h3>🚀 Never Get Stranded in Vietnam</h3>
+        <p style="font-size: 0.9rem; margin: 8px 0 16px; color: #cbd5e1;">Get the official Viettel 5G Core eSIM delivered instantly to your inbox with zero passport KYC.</p>
+        <a href="https://kovitel.com/products/premium-vietnam-esim-5g" target="_blank" class="btn-action" style="display:inline-block; text-decoration:none; padding: 12px 28px;">Get Your Kovitel 5G eSIM Now 🛒</a>
+      </div>
+
+      <button class="btn-choice" style="width:100%; justify-content:center; margin-top:16px;" onclick="resetGame()">Play Again 🔄</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Sound effect synth
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+function playBeep(freq = 600, duration = 0.08) {
+  try {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.frequency.value = freq;
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+    osc.start();
+    osc.stop(audioCtx.currentTime + duration);
+  } catch(e){}
+}
+
+const STAGES = [
+  {
+    title: "Stage 1: Touchdown at Noi Bai Airport (11:45 PM)",
+    story: "Your flight from Singapore lands late at night in Hanoi. You need to order a Grab car to your hostel in the Old Quarter. Unlicensed taxi drivers are crowding the exit demanding $35 USD cash. What is your move?",
+    choices: [
+      {
+        text: "Wait in line at the airport SIM kiosk ($32 USD, physical SIM)",
+        effect: { cash: -32, ping: 25, stress: 30, score: -20 },
+        feedback: "You waited 25 mins in line, staff took photos of your passport with their private phone, and charged you 3x the standard price."
+      },
+      {
+        text: "Rely on Free Airport Wi-Fi to summon a taxi",
+        effect: { cash: 0, ping: 180, stress: 55, score: -10 },
+        feedback: "Airport Wi-Fi disconnected as soon as you walked out of the terminal glass doors. Your Grab driver cancelled and you got stranded in the rain."
+      },
+      {
+        text: "Switch on pre-installed Kovitel Viettel 5G eSIM (Already set up)",
+        effect: { cash: -12, ping: 16, stress: -5, score: 50 },
+        feedback: "Instant 5G connection while still walking down the jetbridge! You ordered an official GrabCar for $12 USD and bypassed the arrival touts in seconds."
+      }
+    ]
+  },
+  {
+    title: "Stage 2: Mã Pí Lèng Pass Hairpin (Hà Giang Loop)",
+    story: "You are riding a semi-automatic motorbike across the misty cliffs of Mã Pí Lèng Pass. Heavy fog rolls in, your fuel tank is low, and you need Google Maps GPS navigation to find the nearest petrol station in Mèo Vạc. Your phone signal:",
+    choices: [
+      {
+        text: "Using a Global Roaming eSIM app (Hong Kong proxy IP)",
+        effect: { cash: 0, ping: 290, stress: 45, score: -15 },
+        feedback: "Your signal had bars, but packet latency jumped to 340ms across subsea cables. Google Maps GPS routing timed out in the mountain pass."
+      },
+      {
+        text: "Using a Budget Tourist SIM (Vietnamobile / Tier-3 carrier)",
+        effect: { cash: 0, ping: 999, stress: 80, score: -40 },
+        feedback: "'No Service'! Budget tier-3 carriers have zero towers in the northern mountains. You had to flag down an ethnic minority farmer to ask for fuel."
+      },
+      {
+        text: "Using Kovitel's Direct Viettel 5G Core Network",
+        effect: { cash: 0, ping: 19, stress: -10, score: 50 },
+        feedback: "Viettel operates over 70,000 BTS towers nationwide! You had 4 full signal bars and sub-20ms latency on the pass, leading you straight to fuel."
+      }
+    ]
+  },
+  {
+    title: "Stage 3: APN Settings & 'No Service' Panic",
+    story: "You wake up in a homestay in Sa Pa and notice your mobile data icon has an exclamation point (!). Your phone displays 'PDP Authentication Failure'. What do you do?",
+    choices: [
+      {
+        text: "Panic, restart phone 10 times, and blame Vietnam's infrastructure",
+        effect: { cash: 0, ping: 0, stress: 50, score: -20 },
+        feedback: "Restarting didn't fix the carrier table. You wasted 2 hours of daylight hiking time."
+      },
+      {
+        text: "Configure APN to 'v-internet' & turn Data Roaming ON (Per Kovitel Guide)",
+        effect: { cash: 0, ping: 15, stress: -20, score: 50 },
+        feedback: "BAM! APN 'v-internet' restored data instantly. 5G symbol reappeared at 250 Mbps."
+      },
+      {
+        text: "Throw away the eSIM and go buy a physical SIM in town",
+        effect: { cash: -15, ping: 35, stress: 35, score: -25 },
+        feedback: "You spent $15 on a SIM card that stopped working 48 hours later because the shop owner didn't register your tourist passport correctly."
+      }
+    ]
+  },
+  {
+    title: "Stage 4: Sleeper Train to Da Nang (Remote Work Hotspot)",
+    story: "You are on the 16-hour Reunification Express train rolling along the coastline. Your boss messages you needing an urgent 500MB video upload. The train has no onboard Wi-Fi. How do you deliver?",
+    choices: [
+      {
+        text: "Hotspot through Kovitel's 5GB/Day Viettel 5G allowance",
+        effect: { cash: 0, ping: 20, stress: -15, score: 50 },
+        feedback: "Viettel tracks the railway line with dedicated trackside cells. File uploaded in 35 seconds while watching the sunset over the South China Sea."
+      },
+      {
+        text: "Try to tether from a generic travel eSIM with a 1GB daily fair-usage cap",
+        effect: { cash: 0, ping: 300, stress: 60, score: -20 },
+        feedback: "After 200MB, the roaming provider throttled your speed to 128kbps! The upload failed and your boss was unimpressed."
+      }
+    ]
+  }
+];
+
+let currentStage = 0;
+let stats = { cash: 100, ping: 18, stress: 10, score: 100 };
+
+function updateHud() {
+  document.getElementById("statCash").textContent = `$${stats.cash}`;
+  document.getElementById("statPing").textContent = `${stats.ping}ms`;
+  document.getElementById("statStress").textContent = `${Math.max(0, stats.stress)}%`;
+  document.getElementById("statScore").textContent = stats.score;
+}
+
+function startGame() {
+  playBeep(800, 0.1);
+  document.getElementById("introView").style.display = "none";
+  document.getElementById("hudBar").style.display = "flex";
+  document.getElementById("stageView").style.display = "block";
+  currentStage = 0;
+  stats = { cash: 100, ping: 18, stress: 10, score: 100 };
+  updateHud();
+  renderStage();
+}
+
+function renderStage() {
+  const stage = STAGES[currentStage];
+  document.getElementById("stageTitle").textContent = stage.title;
+  document.getElementById("stageStory").innerHTML = stage.story;
+  document.getElementById("feedbackArea").innerHTML = "";
+
+  const grid = document.getElementById("choicesGrid");
+  grid.innerHTML = "";
+
+  stage.choices.forEach((choice, index) => {
+    const btn = document.createElement("button");
+    btn.className = "btn-choice";
+    btn.innerHTML = `<span>${choice.text}</span> <span class="badge-tag">Select</span>`;
+    btn.onclick = () => selectChoice(index);
+    grid.appendChild(btn);
+  });
+}
+
+function selectChoice(index) {
+  const stage = STAGES[currentStage];
+  const choice = stage.choices[index];
+  
+  playBeep(choice.effect.score > 0 ? 900 : 350, 0.12);
+
+  stats.cash += choice.effect.cash;
+  stats.ping = choice.effect.ping || stats.ping;
+  stats.stress += choice.effect.stress;
+  stats.score += choice.effect.score;
+  updateHud();
+
+  const isGood = choice.effect.score > 0;
+  const fb = document.getElementById("feedbackArea");
+  fb.innerHTML = `<div class="feedback-box ${isGood ? 'feedback-success' : 'feedback-danger'}">
+    <strong>${isGood ? '✅ Excellent Choice:' : '⚠️ Consequence:'}</strong> ${choice.feedback}
+  </div>`;
+
+  const grid = document.getElementById("choicesGrid");
+  grid.innerHTML = `<button class="btn-action" onclick="nextStage()">Continue to Next Stage ➔</button>`;
+}
+
+function nextStage() {
+  playBeep(700, 0.08);
+  currentStage++;
+  if (currentStage < STAGES.length) {
+    renderStage();
+  } else {
+    showEndScreen();
+  }
+}
+
+function showEndScreen() {
+  document.getElementById("stageView").style.display = "none";
+  document.getElementById("hudBar").style.display = "none";
+  document.getElementById("endView").style.display = "block";
+
+  const isWin = stats.score >= 180;
+  document.getElementById("endHeading").innerHTML = isWin ? "🏆 Master Explorer Ranking!" : "⚠️ Survived with Scars!";
+  document.getElementById("endSummary").innerHTML = isWin 
+    ? `Flawless connectivity journey! Final Score: <strong>${stats.score} pts</strong> • Cash Saved: <strong>$${stats.cash}</strong> • Avg Latency: <strong>${stats.ping}ms</strong>`
+    : `You made it through, but bad telecom choices cost you time and cash. Final Score: <strong>${stats.score} pts</strong>`;
+
+  document.getElementById("endDetails").innerHTML = `
+    <strong>Connectivity Analysis:</strong><br>
+    In Vietnam, local core routing (Viettel 5G) provides the single most important safety buffer against dead zones, scam taxi drivers, and high-latency disconnects.
+  `;
+}
+
+function resetGame() {
+  document.getElementById("endView").style.display = "none";
+  document.getElementById("introView").style.display = "block";
+}
+</script>
+
+</body>
+</html>

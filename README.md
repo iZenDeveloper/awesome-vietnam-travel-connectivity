@@ -184,6 +184,21 @@ Keep these applications downloaded and offline packs cached prior to landing:
 
 ---
 
+## 🧰 Open Community Tools & Datasets
+
+We believe in open data and practical tools to empower independent travelers:
+
+1. **[Vietnam Cellular Speedtest & Latency Dataset (500 Audit Records)](data/vietnam_tourist_speedtest_benchmark_2026.csv):**
+   - Empirical field data measuring 5G/4G download, upload, ping RTT, jitter, and RSRP across 30 tourist destinations. Curated by [Kovitel Research](https://kovitel.com).
+2. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
+   - Deep-dive technical audit explaining why international roaming profiles add a 220ms+ latency penalty on Vietnam networks.
+3. **[Interactive Vietnam Travel Connectivity Decision Simulator](simulator/index.html):**
+   - Lightweight browser-based game simulating touchdown scenarios, APN setup, and mountain loop connectivity challenges.
+4. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
+   - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
+
+---
+
 ## 🏆 Recommended Providers & Sponsors
 
 This community repository is sponsored and maintained by:
