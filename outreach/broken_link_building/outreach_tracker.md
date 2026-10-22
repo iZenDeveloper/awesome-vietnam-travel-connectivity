@@ -12,8 +12,8 @@
 | **BL-003** | **Nerd Nomads** | `contact@nerdnomads.com` | `/vietnam-sim-card` (404) | [5G Speedtest Whitepaper](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
 | **BL-004** | **VietAsia Travel** | `support@vietasiatravel.com` | `/travel-guide/how-to-stay-connected-in-vietnam` (404) | [Kovitel Homepage](https://kovitel.com) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
 | **BL-005** | **Day Trips Vietnam** | `hello@daytripsvietnam.com` | `/vietnam-sim-card` (404) | [Viettel 5G Product](https://kovitel.com/products/premium-vietnam-esim-5g) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
-| **BL-006** | **Wikivoyage** | `en.wikivoyage.org` | Vietnam #Connect Outdated Info | [Viettel 5G APN Guide](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | 📝 Wikitext Diff Prepared | 22/10/2026 | 🟢 Wiki Ready | Pending Edit |
-| **BL-007** | **GeckoRoutes** | `contact@geckoroutes.com` | `/vietnam/sim-card-vietnam/` (404) | [Viettel 5G Core eSIM](https://kovitel.com/products/premium-vietnam-esim-5g) | 📋 Queued for Batch 2 | 22/10/2026 | ⏳ Queued | Pending |
+| **BL-006** | **Wikivoyage** | `en.wikivoyage.org` | Vietnam #Connect Outdated Info | [Viettel 5G APN Guide](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | ✅ Live Edit Published | 22/10/2026 | 🏆 Live Backlink | [Wikivoyage Vietnam (DR 98)](https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones) |
+| **BL-007** | **GeckoRoutes** | `contact@geckoroutes.com` | `/vietnam/sim-card-vietnam/` (404) | [Viettel 5G Core eSIM](https://kovitel.com/products/premium-vietnam-esim-5g) | ✅ Automated Sent (Email + Form) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
 
 ---
 
