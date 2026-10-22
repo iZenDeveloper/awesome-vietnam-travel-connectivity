@@ -212,8 +212,8 @@ We believe in open data and practical tools to empower independent travelers:
     - D3.js interactive notebook analyzing network latency curves.
 12. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
     - Containerized diagnostic agent for automated ICMP ping and traceroute benchmarking.
-13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report](substack/):**
-    - Deep-dive traveler dispatch on motorcycle route connectivity across Northern Vietnam.
+13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report (Live)](https://substack.com/@kovitel/note/c-367119955):**
+    - Deep-dive traveler dispatch on motorcycle route connectivity across Northern Vietnam. Profile: [@kovitel](https://substack.com/@kovitel).
 14. **[Interactive Leaflet & uMap Web Map](maps/interactive.html):**
     - Fullscreen interactive map plotting 5G microcells, mountain passes, and medical facilities across Vietnam.
 15. **[OpenStreetMap Diary: Mapping Ha Giang Base Stations](osm/):**
