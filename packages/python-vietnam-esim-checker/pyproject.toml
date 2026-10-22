@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vietnam-esim-checker"
+version = "1.0.0"
+authors = [
+  { name="Kovitel Telecom Research Group", email="engineering@kovitel.com" },
+]
+description = "A lightweight CLI and Python library to verify smartphone eSIM compatibility and Vietnam cellular carrier APN settings."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://kovitel.com"
+"Official Store" = "https://kovitel.com/products/premium-vietnam-esim-5g"
+"Bug Reports" = "https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity/issues"
+"Source" = "https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity"
+
+[project.scripts]
+vietnam-esim-check = "vietnam_esim_checker.cli:main"

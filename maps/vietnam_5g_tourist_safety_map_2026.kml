@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Vietnam 5G Viettel &amp; Tourist Safety Map 2026 - By Kovitel</name>
+    <description>Interactive map of mobile 5G coverage, mountain road safety points, hospital clinics, and tourist connectivity hubs across Vietnam. Curated by Kovitel (https://kovitel.com).</description>
+    <Placemark>
+      <name><![CDATA[Nội Bài International Airport (HAN) - Arrival Hall]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Transit Hub & eSIM Activation Point</p><p>Terminal 2 International Arrivals. Signal: Viettel 5G Ultra-fast (>300Mbps). Turn on your pre-installed Kovitel eSIM immediately to hail Grab cars and avoid airport touts.</p><p><a href="https://kovitel.com/products/premium-vietnam-esim-5g">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.8072,21.2212,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Tân Sơn Nhất International Airport (SGN) - International Terminal]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Transit Hub & eSIM Activation Point</p><p>Arrival gate pickup zone. Viettel 5G active across all terminals. Connect in under 60 seconds with Kovitel.</p><p><a href="https://kovitel.com/products/premium-vietnam-esim-5g">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>106.6588,10.8185,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Hà Giang - Mã Pí Lèng Skywalk (High Altitude Pass)]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Mountain Adventure & Continuous BTS Coverage</p><p>Altitude: 1,500m. Viettel operates continuous high-gain mountain cells here. Critical for Google Maps GPS tracking on the Ha Giang motorbike loop.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.4243,23.2427,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Sa Pa - Fansipan Summit Station (3,143m)]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Mountain Adventure & Continuous BTS Coverage</p><p>Roof of Indochina. Dedicated Viettel 5G microcell installed at the summit pagoda. Live stream at 250Mbps from above the clouds.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>103.7752,22.3034,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Đồng Văn Ancient Town (Hà Giang)]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Highland Cultural Center</p><p>Key rest stop on the Ha Giang loop. Reliable 4G/5G Viettel network. Emergency support available via Kovitel WhatsApp.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.3619,23.2783,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Ninh Bình - Tràng An Grottoes Dock]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Heritage & Eco-Tourism</p><p>UNESCO World Heritage Site. 100% 4G/5G signal coverage along the 3-hour river boat route.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.9083,20.2539,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Đà Nẵng - Golden Bridge (Bà Nà Hills)]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Iconic Landmark</p><p>Giant stone hands bridge. Full 5G coverage throughout the mountain theme park.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>107.9964,15.9953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Hội An Ancient Town - Japanese Covered Bridge]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Heritage & Night Market</p><p>Historic canal district. High-density cellular nodes ensure zero congestion during lantern festival nights.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>108.3268,15.8774,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Phú Quốc - Sunset Town Cable Car Terminal]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Island Resort & Coastal Gateway</p><p>Longest sea-crossing 3-wire cable car. Continuous Viettel marine cellular coverage across An Thoi archipelago.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>104.0111,10.0278,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Hanoi French Hospital (L'Hôpital Français de Hanoï)]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Medical Emergency Point</p><p>Top international hospital in Hanoi. Emergency phone: +84 24 3577 1100. Open 24/7.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.8427,20.9996,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[FV Hospital (Hôpital Franco-Vietnamien) - HCMC]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Medical Emergency Point</p><p>International JCI-accredited hospital in District 7, Ho Chi Minh City. Emergency phone: +84 28 5411 3500.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>106.7204,10.7303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Kovitel 24/7 Technical WhatsApp Rescue Center]]></name>
+      <description><![CDATA[<p><strong>Category:</strong> Digital Nomad & Tourist Support Hotline</p><p>Instant 24/7 technical WhatsApp assistance for APN settings, data top-up, and eSIM QR troubleshooting across Vietnam. WhatsApp: +84 394 678 888.</p><p><a href="https://kovitel.com">Visit Kovitel.com</a></p>]]></description>
+      <Point>
+        <coordinates>105.8542,21.0285,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

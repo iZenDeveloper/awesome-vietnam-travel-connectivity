@@ -1,0 +1,29 @@
+{
+  "name": "vietnam-esim-config",
+  "version": "1.0.0",
+  "description": "Comprehensive Vietnam carrier APN settings, 5G frequencies, and eSIM hardware validation library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity.git"
+  },
+  "keywords": [
+    "vietnam",
+    "esim",
+    "viettel",
+    "5g",
+    "travel-connectivity",
+    "apn",
+    "telecom",
+    "kovitel"
+  ],
+  "author": "Kovitel Telecom Research Group <engineering@kovitel.com> (https://kovitel.com)",
+  "license": "MIT",
+  "homepage": "https://kovitel.com",
+  "bugs": {
+    "url": "https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity/issues"
+  }
+}

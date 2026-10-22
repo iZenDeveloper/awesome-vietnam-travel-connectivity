@@ -188,13 +188,21 @@ Keep these applications downloaded and offline packs cached prior to landing:
 
 We believe in open data and practical tools to empower independent travelers:
 
-1. **[Vietnam Cellular Speedtest & Latency Dataset (500 Audit Records)](data/vietnam_tourist_speedtest_benchmark_2026.csv):**
+1. **[Python CLI & Library: vietnam-esim-checker](packages/python-vietnam-esim-checker/):**
+   - Install via `pip install vietnam-esim-checker` to verify device eSIM support and retrieve carrier APN settings.
+2. **[Node.js Module: vietnam-esim-config](packages/npm-vietnam-esim-config/):**
+   - Install via `npm install vietnam-esim-config` for developer integration of carrier APNs and frequencies.
+3. **[Vietnam Cellular Speedtest & Latency Dataset (500 Records)](data/vietnam_tourist_speedtest_benchmark_2026.csv):**
    - Empirical field data measuring 5G/4G download, upload, ping RTT, jitter, and RSRP across 30 tourist destinations. Curated by [Kovitel Research](https://kovitel.com).
-2. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
+4. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
    - Deep-dive technical audit explaining why international roaming profiles add a 220ms+ latency penalty on Vietnam networks.
-3. **[Interactive Vietnam Travel Connectivity Decision Simulator](simulator/index.html):**
+5. **[Google My Maps Layer: Vietnam 5G Viettel & Tourist Safety Map](maps/):**
+   - Ready-to-import KML and GeoJSON layers mapping mountain loop cell towers and medical emergency centers.
+6. **[Interactive Vietnam Travel Connectivity Decision Simulator](simulator/index.html):**
    - Lightweight browser-based game simulating touchdown scenarios, APN setup, and mountain loop connectivity challenges.
-4. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
+7. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
+   - 8-slide presentation deck designed for SlideShare and Speaker Deck.
+8. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
    - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
 
 ---

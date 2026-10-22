@@ -1,0 +1,2 @@
+[console_scripts]
+vietnam-esim-check = vietnam_esim_checker.cli:main

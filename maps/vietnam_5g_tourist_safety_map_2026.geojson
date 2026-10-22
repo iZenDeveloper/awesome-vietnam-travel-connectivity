@@ -1,0 +1,210 @@
+{
+  "type": "FeatureCollection",
+  "name": "Vietnam_5G_Tourist_Safety_Map_2026",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8072,
+          21.2212
+        ]
+      },
+      "properties": {
+        "name": "Nội Bài International Airport (HAN) - Arrival Hall",
+        "category": "Transit Hub & eSIM Activation Point",
+        "description": "Terminal 2 International Arrivals. Signal: Viettel 5G Ultra-fast (>300Mbps). Turn on your pre-installed Kovitel eSIM immediately to hail Grab cars and avoid airport touts.",
+        "website": "https://kovitel.com/products/premium-vietnam-esim-5g",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6588,
+          10.8185
+        ]
+      },
+      "properties": {
+        "name": "Tân Sơn Nhất International Airport (SGN) - International Terminal",
+        "category": "Transit Hub & eSIM Activation Point",
+        "description": "Arrival gate pickup zone. Viettel 5G active across all terminals. Connect in under 60 seconds with Kovitel.",
+        "website": "https://kovitel.com/products/premium-vietnam-esim-5g",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.4243,
+          23.2427
+        ]
+      },
+      "properties": {
+        "name": "Hà Giang - Mã Pí Lèng Skywalk (High Altitude Pass)",
+        "category": "Mountain Adventure & Continuous BTS Coverage",
+        "description": "Altitude: 1,500m. Viettel operates continuous high-gain mountain cells here. Critical for Google Maps GPS tracking on the Ha Giang motorbike loop.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7752,
+          22.3034
+        ]
+      },
+      "properties": {
+        "name": "Sa Pa - Fansipan Summit Station (3,143m)",
+        "category": "Mountain Adventure & Continuous BTS Coverage",
+        "description": "Roof of Indochina. Dedicated Viettel 5G microcell installed at the summit pagoda. Live stream at 250Mbps from above the clouds.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3619,
+          23.2783
+        ]
+      },
+      "properties": {
+        "name": "Đồng Văn Ancient Town (Hà Giang)",
+        "category": "Highland Cultural Center",
+        "description": "Key rest stop on the Ha Giang loop. Reliable 4G/5G Viettel network. Emergency support available via Kovitel WhatsApp.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9083,
+          20.2539
+        ]
+      },
+      "properties": {
+        "name": "Ninh Bình - Tràng An Grottoes Dock",
+        "category": "Heritage & Eco-Tourism",
+        "description": "UNESCO World Heritage Site. 100% 4G/5G signal coverage along the 3-hour river boat route.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.9964,
+          15.9953
+        ]
+      },
+      "properties": {
+        "name": "Đà Nẵng - Golden Bridge (Bà Nà Hills)",
+        "category": "Iconic Landmark",
+        "description": "Giant stone hands bridge. Full 5G coverage throughout the mountain theme park.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.3268,
+          15.8774
+        ]
+      },
+      "properties": {
+        "name": "Hội An Ancient Town - Japanese Covered Bridge",
+        "category": "Heritage & Night Market",
+        "description": "Historic canal district. High-density cellular nodes ensure zero congestion during lantern festival nights.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0111,
+          10.0278
+        ]
+      },
+      "properties": {
+        "name": "Phú Quốc - Sunset Town Cable Car Terminal",
+        "category": "Island Resort & Coastal Gateway",
+        "description": "Longest sea-crossing 3-wire cable car. Continuous Viettel marine cellular coverage across An Thoi archipelago.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8427,
+          20.9996
+        ]
+      },
+      "properties": {
+        "name": "Hanoi French Hospital (L'Hôpital Français de Hanoï)",
+        "category": "Medical Emergency Point",
+        "description": "Top international hospital in Hanoi. Emergency phone: +84 24 3577 1100. Open 24/7.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7204,
+          10.7303
+        ]
+      },
+      "properties": {
+        "name": "FV Hospital (Hôpital Franco-Vietnamien) - HCMC",
+        "category": "Medical Emergency Point",
+        "description": "International JCI-accredited hospital in District 7, Ho Chi Minh City. Emergency phone: +84 28 5411 3500.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8542,
+          21.0285
+        ]
+      },
+      "properties": {
+        "name": "Kovitel 24/7 Technical WhatsApp Rescue Center",
+        "category": "Digital Nomad & Tourist Support Hotline",
+        "description": "Instant 24/7 technical WhatsApp assistance for APN settings, data top-up, and eSIM QR troubleshooting across Vietnam. WhatsApp: +84 394 678 888.",
+        "website": "https://kovitel.com",
+        "source": "Kovitel Travel Telecom (https://kovitel.com)"
+      }
+    }
+  ]
+}
