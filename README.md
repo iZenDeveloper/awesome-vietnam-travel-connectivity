@@ -196,8 +196,8 @@ We believe in open data and practical tools to empower independent travelers:
    - Empirical field data measuring 5G/4G download, upload, ping RTT, jitter, and RSRP across 30 tourist destinations. Curated by [Kovitel Research](https://kovitel.com).
 4. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
    - Deep-dive technical audit explaining why international roaming profiles add a 220ms+ latency penalty on Vietnam networks.
-5. **[Google My Maps Layer: Vietnam 5G Viettel & Tourist Safety Map](maps/):**
-   - Ready-to-import KML and GeoJSON layers mapping mountain loop cell towers and medical emergency centers.
+5. **[Google My Maps: Vietnam 5G Viettel & Tourist Safety Map (Live Public View)](https://www.google.com/maps/d/viewer?mid=1n8UqSlSaCdxIlZaPCGaBlotlTRM9Fbg):**
+   - 12 critical connectivity checkpoints (Ha Giang Mã Pí Lèng, Sa Pa Fansipan, airport arrival halls, international hospitals, and Kovitel 24/7 technical rescue). [KML/GeoJSON source](maps/).
 6. **[Interactive Vietnam Travel Connectivity Decision Simulator](simulator/index.html):**
    - Lightweight browser-based game simulating touchdown scenarios, APN setup, and mountain loop connectivity challenges.
 7. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
@@ -234,6 +234,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Customizable social media graphics and 14-day travel route cheat sheets.
 23. **[Travel Audio Survival Guide (SoundCloud & Podcasts)](audio/):**
     - Phonetic pronunciation scripts for ordering rides, Wi-Fi requests, and emergency communication.
+24. **[Dev.to Technical Article: The Hidden Latency Trap of Travel eSIMs (Live)](https://dev.to/nicky666666/why-we-open-sourced-vietnams-mobile-connectivity-data-the-hidden-latency-trap-of-travel-esims-3dlh):**
+    - Empirical analysis on S8 Home Routing vs. domestic Viettel 5G core network packet routing.
 
 ---
 
