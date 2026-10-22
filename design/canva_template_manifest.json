@@ -1,0 +1,36 @@
+{
+  "creator_brand": "Kovitel Travel Media",
+  "website": "https://kovitel.com",
+  "catalog_url": "https://kovitel.com/products/premium-vietnam-esim-5g",
+  "templates": [
+    {
+      "template_id": "canva-vn-itinerary-infographic-2026",
+      "title": "Vietnam 14-Day Ultimate Route & 5G Connectivity Infographic",
+      "format": "Pinterest / Story (1080x1920 px)",
+      "target_audience": "Solo backpackers, travel bloggers, digital nomads",
+      "sections": [
+        "Header: Vietnam 14-Day Travel Route & Survival Checklist",
+        "Stop 1: Hanoi Street Food & Noi Bai Airport Landing Protocol",
+        "Stop 2: Ha Giang Motorbike Loop & Ma Pi Leng Pass 5G Signal Tips",
+        "Stop 3: Sa Pa & Mount Fansipan (3,143m) Summit Connectivity",
+        "Stop 4: Ninh Binh Karst River Grottoes Navigation",
+        "Stop 5: Da Nang Beaches & Hoi An Lantern Night Market",
+        "Stop 6: Ho Chi Minh City Coworking & Rooftop Cafes",
+        "Footer: Sponsored by Kovitel — Instant Vietnam Viettel 5G eSIM (kovitel.com)"
+      ],
+      "color_palette": {
+        "primary": "#DC2626",
+        "secondary": "#0F172A",
+        "accent": "#F59E0B",
+        "background": "#F8FAFC"
+      }
+    },
+    {
+      "template_id": "canva-airport-sim-scam-cheat-sheet",
+      "title": "Vietnam Airport SIM vs Pre-Ordered eSIM Comparison Cheat Sheet",
+      "format": "Instagram Carousel (1080x1350 px)",
+      "target_audience": "Tourists flying into Hanoi or Ho Chi Minh City",
+      "key_visual": "Side-by-side cost breakdown ($35 airport kiosk vs $12 Kovitel eSIM) and zero passport KYC advantage."
+    }
+  ]
+}

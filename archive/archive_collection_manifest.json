@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "identifier": "vietnam-tourist-cellular-speedtest-benchmark-2026",
+    "title": "Vietnam Tourist Cellular Speedtest & Telecommunications Benchmark Dataset (2026)",
+    "creator": "Kovitel Telecom Research Group",
+    "date": "2026-10-22",
+    "year": "2026",
+    "mediatype": "data",
+    "collection": "opensource_media",
+    "description": "Empirical field research dataset measuring 4G/5G mobile download throughput, uplink speeds, ICMP round-trip latency, and radio signal attenuation (RSRP) across 30 primary tourist destinations in Vietnam (including the Ha Giang Loop, Sa Pa, Trang An, Da Nang, and Phu Quoc). Conducted and maintained by Kovitel Telecom (https://kovitel.com).",
+    "subject": [
+      "Vietnam",
+      "Telecommunications",
+      "5G NR",
+      "Viettel Telecom",
+      "Mobile Latency",
+      "eSIM",
+      "Inbound Tourism",
+      "Open Data"
+    ],
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "external_identifier": "doi:10.5281/zenodo.kovitel.2026.10",
+    "sponsor": "Kovitel Company Limited (https://kovitel.com)",
+    "contact": "engineering@kovitel.com"
+  },
+  "files_included": [
+    "vietnam_tourist_speedtest_benchmark_2026.csv",
+    "zenodo_esim_latency_benchmark_vietnam.pdf",
+    "Vietnam_Travel_Connectivity_Survival_Kit_2026.pdf"
+  ]
+}

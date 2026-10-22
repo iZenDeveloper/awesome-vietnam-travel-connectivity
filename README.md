@@ -224,6 +224,16 @@ We believe in open data and practical tools to empower independent travelers:
     - Dynamic travel expense and carrier comparison document template.
 18. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
     - Formal economic and engineering preprint evaluating telecommunications impact on inbound tourism.
+19. **[Internet Archive Digital Preservation (archive.org)](archive/):**
+    - Permanent historical preservation package for open cellular datasets and survival kits.
+20. **[Digital Travel Magazine (Issuu & Flipbook Edition)](magazine/vietnam_travel_connectivity_magazine_2026.html):**
+    - Multi-page travel editorial layout and publication format.
+21. **[Network Protocol Analysis: Demystifying S8 Home Routing](articles/hashnode_article.md):**
+    - Deep-dive technical article explaining GTP-U encapsulation and subsea cable RTT overhead.
+22. **[Canva Community Travel Infographic Templates](design/):**
+    - Customizable social media graphics and 14-day travel route cheat sheets.
+23. **[Travel Audio Survival Guide (SoundCloud & Podcasts)](audio/):**
+    - Phonetic pronunciation scripts for ordering rides, Wi-Fi requests, and emergency communication.
 
 ---
 
