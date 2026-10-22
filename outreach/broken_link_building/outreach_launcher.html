@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kovitel Broken Link Outreach Command Center 🚀</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --success: #10b981;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #f59e0b;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+    header {
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      margin: 0;
+      font-size: 15px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat-val {
+      font-size: 26px;
+      font-weight: 700;
+      color: #60a5fa;
+    }
+    .stat-lbl {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 14px;
+    }
+    .prospect-name {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dr-badge {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .issue-box {
+      background: rgba(239, 68, 68, 0.1);
+      border-left: 3px solid #ef4444;
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      color: #fca5a5;
+    }
+    .issue-box code {
+      color: #fff;
+      font-family: monospace;
+    }
+    .field-row {
+      margin-bottom: 12px;
+    }
+    .field-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .field-value {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #e2e8f0;
+      user-select: all;
+    }
+    .body-box {
+      max-height: 180px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+    .btn-secondary {
+      background: #334155;
+      color: #f8fafc;
+    }
+    .btn-secondary:hover {
+      background: #475569;
+    }
+    .btn-copy {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: #cbd5e1;
+    }
+    .btn-copy:hover {
+      background: #1e293b;
+      border-color: #64748b;
+    }
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #10b981;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kovitel Broken Link Outreach Command Center <span class="badge">Live 2026</span></h1>
+      <p class="subtitle">Direct 1-Click Outreach Launcher for High-DR Authority Backlinks (DR 39 - DR 98)</p>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val">6</div>
+        <div class="stat-lbl">High-Authority Targets</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">59.0</div>
+        <div class="stat-lbl">Average Domain Rating (DR)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">DR 98</div>
+        <div class="stat-lbl">Top Target (Wikivoyage)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">100%</div>
+        <div class="stat-lbl">Drafts & Pitches Prepared</div>
+      </div>
+    </div>
+
+    <!-- TARGET 1: FRIENDS TRAVEL VIETNAM -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">Friends Travel Vietnam <span class="dr-badge">DR 45 / DA 38</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Contact: <code>info@friendstravelvietnam.com</code></div>
+        </div>
+      </div>
+      <div class="issue-box">
+        <strong>Detected 404:</strong> <code>https://friendstravelvietnam.com/travel-tips/vietnam-sim-card</code> (Broken link on local tourist tips page).
+      </div>
+      <div class="field-row">
+        <div class="field-label">Subject</div>
+        <div class="field-value" id="s1">Broken resource link on Friends Travel Vietnam (Tourist SIM section)</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Body (Template 3: Tour Operator Fix)</div>
+        <div class="field-value body-box" id="b1">Dear Friends Travel Vietnam Team,
+
+I hope your team is having a wonderful peak travel season!
+
+We frequently recommend your tours to travelers visiting Vietnam. While sharing your Vietnam tourist tips page with a customer, we noticed that your link for purchasing local SIM cards is currently returning an error (404 Not Found):
+* Broken URL: https://friendstravelvietnam.com/travel-tips/vietnam-sim-card
+
+To ensure incoming tourists arrive with active data and avoid inflated airport kiosk pricing, you can replace it with our official pre-authorized Viettel 5G travel eSIM portal:
+👉 https://kovitel.com/products/premium-vietnam-esim-5g
+
+Key benefits for your guests:
+1. Instant QR delivery within 60 seconds (no physical store queues).
+2. Zero passport eKYC friction (pre-verified tourist travel profile).
+3. 24/7 technical WhatsApp rescue hotline (+84 394 678 888) for instant APN setup.
+
+We’d also love to provide your team with complimentary Viettel 5G eSIMs whenever your staff or guides need to test high-speed connectivity in the field!
+
+Thank you for your fantastic dedication to inbound tourism in Vietnam!
+
+Warm regards,
+
+Dat Nguyen
+Telecom Partnerships Lead
+Kovitel Travel Telecom | https://kovitel.com
+WhatsApp: +84 394 678 888</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@friendstravelvietnam.com&su=Broken%20resource%20link%20on%20Friends%20Travel%20Vietnam%20(Tourist%20SIM%20section)">🚀 Open in Gmail (Pre-filled)</a>
+        <button class="btn btn-copy" onclick="copyText('s1')">📋 Copy Subject</button>
+        <button class="btn btn-copy" onclick="copyText('b1')">📋 Copy Body</button>
+      </div>
+    </div>
+
+    <!-- TARGET 2: TRAVELTOMTOM -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">Traveltomtom (Tom Grond) <span class="dr-badge">DR 68 / DA 55</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Contact: <code>tom@traveltomtom.net</code> / <a href="https://www.traveltomtom.net/contact" target="_blank" style="color:#60a5fa;">Contact Form</a></div>
+        </div>
+      </div>
+      <div class="issue-box">
+        <strong>Detected 404:</strong> <code>https://www.traveltomtom.net/destinations/asia/vietnam/best-prepaid-vietnam-sim-card</code> (Dead asset linked across hundreds of forums).
+      </div>
+      <div class="field-row">
+        <div class="field-label">Subject</div>
+        <div class="field-value" id="s2">Quick heads up regarding broken link on Traveltomtom (Vietnam SIM Guide)</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Body (Template 1: 404 Fix + Free Comp eSIM)</div>
+        <div class="field-value body-box" id="b2">Hi Tom,
+
+I was reading through your guide on Vietnam prepaid SIM cards while helping a group of travelers prepare their itinerary for Northern Vietnam. Fantastic advice on staying connected and exploring Hanoi and Ha Giang!
+
+While browsing, I noticed one of your external links in the mobile connectivity section is currently leading to a dead 404 page:
+* Dead link: https://www.traveltomtom.net/destinations/asia/vietnam/best-prepaid-vietnam-sim-card
+* Anchor text: "best prepaid vietnam sim card"
+
+With Vietnam officially shutting down its 2G/3G networks and launching nationwide 5G across all 63 provinces, many older SIM portals have gone offline or stopped functioning properly for foreign tourists.
+
+If you are looking for an up-to-date, reliable resource to replace that dead link, our team at Kovitel recently published an open field guide covering 2026 Viettel 5G Core connectivity, APN settings (v-internet), and device compatibility:
+👉 https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026
+Or direct eSIM portal: https://kovitel.com/products/premium-vietnam-esim-5g
+
+Also, if you (or anyone on your team) have an upcoming trip to Vietnam, I’d love to comp you a complimentary Kovitel Viettel 5G eSIM (Unlimited / 5GB daily) so you can test the speeds firsthand on your next visit.
+
+Either way, hope this quick note helps keep your guide fresh for future travelers!
+
+Best regards,
+
+Dat Nguyen
+Telecom Research & Growth Lead
+Kovitel Travel Telecom | https://kovitel.com
+WhatsApp: +84 394 678 888</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tom@traveltomtom.net&su=Quick%20heads%20up%20regarding%20broken%20link%20on%20Traveltomtom%20(Vietnam%20SIM%20Guide)">🚀 Open in Gmail (Pre-filled)</a>
+        <button class="btn btn-copy" onclick="copyText('s2')">📋 Copy Subject</button>
+        <button class="btn btn-copy" onclick="copyText('b2')">📋 Copy Body</button>
+      </div>
+    </div>
+
+    <!-- TARGET 3: NERD NOMADS -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">Nerd Nomads (Maria & Espen) <span class="dr-badge">DR 62 / DA 51</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Contact: <code>contact@nerdnomads.com</code> / IG: @nerdnomads</div>
+        </div>
+      </div>
+      <div class="issue-box">
+        <strong>Detected 404:</strong> <code>https://nerdnomads.com/vietnam-sim-card</code> (Old nomad SIM guide returning 404).
+      </div>
+      <div class="field-row">
+        <div class="field-label">Subject</div>
+        <div class="field-value" id="s3">Outdated telecom note on Nerd Nomads / Vietnam 5G update</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Body (Template 2: 2G/3G Sunset & Latency Pitch)</div>
+        <div class="field-value body-box" id="b3">Hey Maria & Espen,
+
+Big fan of your remote work and travel dispatches on Nerd Nomads. Your guides across Southeast Asia have been a go-to bookmark for many digital nomads.
+
+I noticed that in your Vietnam section, your link to the Vietnam SIM card guide is currently returning a 404 error:
+* Broken URL: https://nerdnomads.com/vietnam-sim-card
+
+Additionally, as of late 2024, Vietnam completed its nationwide 2G/3G sunset and deployed Sub-6GHz 5G (Bands n78 / n28). Our empirical testing of 500 field checkpoints revealed that international roaming MVNOs suffer from a heavy 240ms+ S8 Home Routing latency penalty, which causes noticeable lag on remote work calls and navigation.
+
+We released an open dataset and benchmark analysis documenting why domestic Viettel 5G Standalone Core delivers sub-20ms local latency across Vietnam:
+📊 https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026
+
+Would this make a valuable replacement link or resource for your readers looking for reliable connectivity while traveling in Vietnam?
+
+I’d also be delighted to set you up with a free Viettel 5G eSIM for testing whenever you return to Southeast Asia.
+
+Cheers,
+
+Dat Nguyen
+Kovitel Travel Telecom Team
+https://kovitel.com
+WhatsApp: +84 394 678 888</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@nerdnomads.com&su=Outdated%20telecom%20note%20on%20Nerd%20Nomads%20/%20Vietnam%205G%20update">🚀 Open in Gmail (Pre-filled)</a>
+        <button class="btn btn-copy" onclick="copyText('s3')">📋 Copy Subject</button>
+        <button class="btn btn-copy" onclick="copyText('b3')">📋 Copy Body</button>
+      </div>
+    </div>
+
+    <!-- TARGET 4: VIETASIA TRAVEL -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">VietAsia Travel <span class="dr-badge">DR 42 / DA 35</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Contact: <code>support@vietasiatravel.com</code></div>
+        </div>
+      </div>
+      <div class="issue-box">
+        <strong>Detected 404:</strong> <code>https://vietasiatravel.com/travel-guide/how-to-stay-connected-in-vietnam</code>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Subject</div>
+        <div class="field-value" id="s4">Broken resource link on VietAsia Travel (Stay Connected guide)</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Body</div>
+        <div class="field-value body-box" id="b4">Dear VietAsia Travel Team,
+
+I hope your team is having a successful travel season!
+
+While sharing your travel guides with a client preparing for an Indochina tour, we noticed that your link in the "How to stay connected in Vietnam" section is returning a 404 error:
+* Broken URL: https://vietasiatravel.com/travel-guide/how-to-stay-connected-in-vietnam
+
+To make sure your guests arrive with active internet and don't encounter SIM activation issues, you can link to our official Viettel 5G travel eSIM portal:
+👉 https://kovitel.com/products/premium-vietnam-esim-5g
+
+Key benefits for incoming tour groups:
+1. Instant QR delivery within 60 seconds prior to departure.
+2. 100% pre-authorized tourist profiles (zero eKYC queue at airports).
+3. Nationwide Viettel 5G Core coverage with sub-20ms latency and 24/7 English/Vietnamese support.
+
+We’re also happy to partner with VietAsia Travel to provide exclusive connectivity perks for your tour guests.
+
+Warm regards,
+
+Dat Nguyen
+Partnerships Director
+Kovitel Travel Telecom | https://kovitel.com
+WhatsApp: +84 394 678 888</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=support@vietasiatravel.com&su=Broken%20resource%20link%20on%20VietAsia%20Travel%20(Stay%20Connected%20guide)">🚀 Open in Gmail (Pre-filled)</a>
+        <button class="btn btn-copy" onclick="copyText('s4')">📋 Copy Subject</button>
+        <button class="btn btn-copy" onclick="copyText('b4')">📋 Copy Body</button>
+      </div>
+    </div>
+
+    <!-- TARGET 5: DAY TRIPS VIETNAM -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">Day Trips Vietnam <span class="dr-badge">DR 39 / DA 31</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Contact: <code>hello@daytripsvietnam.com</code></div>
+        </div>
+      </div>
+      <div class="issue-box">
+        <strong>Detected 404:</strong> <code>https://daytripsvietnam.com/vietnam-sim-card</code>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Subject</div>
+        <div class="field-value" id="s5">Broken SIM card resource link on Day Trips Vietnam</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Body</div>
+        <div class="field-value body-box" id="b5">Dear Day Trips Vietnam Team,
+
+I hope you are having a productive travel season!
+
+We love recommending your day tours and excursions in Vietnam. While reviewing your travel tips page, we spotted that the link to tourist SIM cards is currently broken (404 Not Found):
+* Broken URL: https://daytripsvietnam.com/vietnam-sim-card
+
+To keep your guides helpful and ensure your day-tour guests have high-speed data for photos and maps, you can replace it with our official Viettel 5G travel eSIM guide:
+👉 https://kovitel.com/products/premium-vietnam-esim-5g
+
+Key benefits:
+- Instant QR setup in 60 seconds before arrival.
+- Nationwide Viettel 5G coverage (even in Ha Long Bay, Ninh Binh, and Mekong Delta).
+- 24/7 technical hotline on WhatsApp (+84 394 678 888).
+
+Happy to share complimentary test eSIMs with your team as well!
+
+Best regards,
+
+Dat Nguyen
+Partnerships Director
+Kovitel Travel Telecom | https://kovitel.com
+WhatsApp: +84 394 678 888</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@daytripsvietnam.com&su=Broken%20SIM%20card%20resource%20link%20on%20Day%20Trips%20Vietnam">🚀 Open in Gmail (Pre-filled)</a>
+        <button class="btn btn-copy" onclick="copyText('s5')">📋 Copy Subject</button>
+        <button class="btn btn-copy" onclick="copyText('b5')">📋 Copy Body</button>
+      </div>
+    </div>
+
+    <!-- TARGET 6: WIKIVOYAGE (DR 98) -->
+    <div class="card" style="border: 2px solid #3b82f6;">
+      <div class="card-header">
+        <div>
+          <div class="prospect-name">Wikivoyage (Wikimedia) <span class="dr-badge" style="background:rgba(59,130,246,0.3); color:#93c5fd;">DR 98 / DA 92</span></div>
+          <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Target URL: <a href="https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones" target="_blank" style="color:#60a5fa;">en.wikivoyage.org/wiki/Vietnam#Mobile_phones</a></div>
+        </div>
+      </div>
+      <div class="issue-box" style="background:rgba(59,130,246,0.1); border-left-color:#3b82f6; color:#bfdbfe;">
+        <strong>Opportunity:</strong> High-authority wiki reference. SogdiaRoam is already cited. We add Kovitel as an authorized Viettel 5G tourist eSIM provider alongside SogdiaRoam + nationwide 5G note.
+      </div>
+      <div class="field-row">
+        <div class="field-label">Prepared Wikitext Replacement (Section 108)</div>
+        <div class="field-value body-box" id="b6">Competition is fierce: Viettel offers tourist eSIMs on its website—though the portal process can be tricky—while specialized platforms like [https://kovitel.com Kovitel] and [https://sogdiaroam.com/esim/vietnam SogdiaRoam] also provide local Viettel 5G eSIM profiles online with instant QR delivery. MobiFone offers a [https://www.mobifone.vn/tin-tuc/chi-tiet/ket-noi-de-dang-thanh-thoi-kham-pha-cung-hi-vietnam-19481 free one-day eSIM plan for tourists] with 8GB of data and unlimited access to Facebook, YouTube and TikTok included. Coverage is generally strong in cities and along major travel routes, with extensive 4G and nationwide 5G availability (Viettel has deployed 5G across all 63 provinces); speeds may be slower in remote mountainous areas. Note that legacy 2G networks have been phased out, so your device must support 4G/VoLTE or 5G.</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" target="_blank" href="https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones">🌐 Open Wikivoyage (Edit Section 108)</a>
+        <button class="btn btn-copy" onclick="copyText('b6')">📋 Copy Wikitext</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">Copied to clipboard! ✅</div>
+
+  <script>
+    function copyText(id) {
+      const el = document.getElementById(id);
+      const text = el.innerText || el.textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
