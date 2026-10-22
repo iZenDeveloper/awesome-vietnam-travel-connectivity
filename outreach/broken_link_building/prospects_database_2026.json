@@ -86,5 +86,20 @@
     "replacement_anchor": "Official Viettel 5G eSIM",
     "contact_channel": "hello@daytripsvietnam.com",
     "status": "Ready for Outreach"
+  },
+  {
+    "id": "BL-007",
+    "target_site": "GeckoRoutes (Maarten Cox)",
+    "domain_authority": "DR 56 / DA 48",
+    "dead_url": "https://geckoroutes.com/vietnam/sim-card-vietnam/",
+    "issue_type": "HTTP 404 Dead SIM Guide Page",
+    "referring_pages": [
+      "Vietnam Route Guides (Hanoi to Sapa, Saigon to Da Lat)",
+      "Popular Southeast Asia Backpacking Hubs"
+    ],
+    "proposed_replacement": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "replacement_anchor": "Kovitel Viettel 5G Travel eSIM",
+    "contact_channel": "https://www.geckoroutes.com/contact/",
+    "status": "Queued for Batch 2"
   }
 ]
