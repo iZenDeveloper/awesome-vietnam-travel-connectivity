@@ -238,6 +238,10 @@ We believe in open data and practical tools to empower independent travelers:
     - Empirical analysis on S8 Home Routing vs. domestic Viettel 5G core network packet routing.
 25. **[Gumroad Digital Survival Kit & Pocket Guide ($0 Free Download)](https://1449470217236.gumroad.com/l/vietnam-connectivity-kit-2026):**
     - The definitive 2026 field connectivity guide, APN cheat sheet, and emergency SOS contacts for travelers in Vietnam.
+26. **[GitHub Official Release v2026.1.0 (Live Assets)](https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity/releases/tag/v2026.1.0):**
+    - Complete survival bundle distribution: Presentation PDF, CSV speedtest dataset (500 pts), Notion Markdown template, and Coda setup file.
+27. **[GitHub Gist: Developer eSIM & 5G APN Quick Reference (Live Gist)](https://gist.github.com/iZenDeveloper/624b0457946a7039793a6995f878d819):**
+    - Public developer cheat sheet containing carrier APNs, S8 Home Routing architecture diagrams, and Python CLI verification snippets.
 
 ---
 
