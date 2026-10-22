@@ -218,8 +218,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Fullscreen interactive map plotting 5G microcells, mountain passes, and medical facilities across Vietnam.
 15. **[OpenStreetMap Diary: Mapping Ha Giang Base Stations](osm/):**
     - Field cartographic notes on GPS accuracy and tower line-of-sight propagation.
-16. **[Replit Cloud Playground](replit/):**
-    - Instant browser-based Python environment to validate smartphone eSIM hardware and calculate data needs.
+16. **[Replit Cloud Playground (Live)](https://replit.com/@takayui89/awesome-vietnam-travel-connectivity):**
+    - Instant browser-based Python environment to validate smartphone eSIM hardware and calculate data needs in the cloud. Local source: [replit](replit/).
 17. **[Coda.io Gallery Interactive Template](coda/):**
     - Dynamic travel expense and carrier comparison document template.
 18. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
