@@ -188,59 +188,61 @@ Keep these applications downloaded and offline packs cached prior to landing:
 
 We believe in open data and practical tools to empower independent travelers:
 
-1. **[Python CLI & Library: vietnam-esim-checker](packages/python-vietnam-esim-checker/):**
+1. **[Model Context Protocol (MCP) Server: kovitel-vietnam-esim-mcp](packages/kovitel-vietnam-esim-mcp/):**
+   - Official MCP server for Claude Desktop, Cursor, and Windsurf AI agents. Provides automated device hardware eSIM verification, daily data allowance calculations, carrier APN rescue, and empirical latency QoS benchmarks. Compatible with [Smithery.ai](https://smithery.ai). Run via `npx -y kovitel-vietnam-esim-mcp`.
+2. **[Python CLI & Library: vietnam-esim-checker](packages/python-vietnam-esim-checker/):**
    - Install via `pip install vietnam-esim-checker` to verify device eSIM support and retrieve carrier APN settings.
-2. **[Node.js Module: vietnam-esim-config](packages/npm-vietnam-esim-config/):**
+3. **[Node.js Module: vietnam-esim-config](packages/npm-vietnam-esim-config/):**
    - Install via `npm install vietnam-esim-config` for developer integration of carrier APNs and frequencies.
-3. **[Vietnam Cellular Speedtest & Latency Dataset on Kaggle (Live Public)](https://www.kaggle.com/datasets/ttekmind/vietnam-5g-speedtest-and-latency-benchmark-2026):**
+4. **[Vietnam Cellular Speedtest & Latency Dataset on Kaggle (Live Public)](https://www.kaggle.com/datasets/ttekmind/vietnam-5g-speedtest-and-latency-benchmark-2026):**
    - 500 empirical field measurements across 30 tourist spots comparing Viettel 5G vs. international roaming MVNOs. Local file: [CSV Dataset](data/vietnam_tourist_speedtest_benchmark_2026.csv). Curated by [Kovitel Research](https://kovitel.com).
-4. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
+5. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
    - Deep-dive technical audit explaining why international roaming profiles add a 220ms+ latency penalty on Vietnam networks.
-5. **[Google My Maps: Vietnam 5G Viettel & Tourist Safety Map (Live Public View)](https://www.google.com/maps/d/viewer?mid=1n8UqSlSaCdxIlZaPCGaBlotlTRM9Fbg):**
+6. **[Google My Maps: Vietnam 5G Viettel & Tourist Safety Map (Live Public View)](https://www.google.com/maps/d/viewer?mid=1n8UqSlSaCdxIlZaPCGaBlotlTRM9Fbg):**
    - 12 critical connectivity checkpoints (Ha Giang Mã Pí Lèng, Sa Pa Fansipan, airport arrival halls, international hospitals, and Kovitel 24/7 technical rescue). [KML/GeoJSON source](maps/).
-6. **[Interactive Vietnam Travel Connectivity Decision Simulator on itch.io (Live Game)](https://nicky666666.itch.io/vietnam-5g-connectivity-simulator):**
+7. **[Interactive Vietnam Travel Connectivity Decision Simulator on itch.io (Live Game)](https://nicky666666.itch.io/vietnam-5g-connectivity-simulator):**
    - Playable HTML5 browser game simulating touchdown scenarios, airport touts, APN setup, and mountain loop connectivity challenges. Also playable on [GitHub Pages](simulator/index.html).
-7. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
+8. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
    - 8-slide presentation deck covering network architecture, carrier comparisons, and tourist survival tips. [View HTML Deck](slides/vietnam_telecom_tourist_guide_2026.html) | [Download Presentation PDF](slides/vietnam_telecom_tourist_guide_2026.pdf).
-8. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
+9. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
    - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
-9. **[Notion Template: Vietnam Solo Travel & Telecom Planner 2026 (Live Public Site)](https://sprinkle-position-fcf.notion.site/Vietnam-Solo-Travel-Expense-Telecom-Planner-2026-Edition-24af777144ca80aabe64f392553ce738):**
+10. **[Notion Template: Vietnam Solo Travel & Telecom Planner 2026 (Live Public Site)](https://sprinkle-position-fcf.notion.site/Vietnam-Solo-Travel-Expense-Telecom-Planner-2026-Edition-24af777144ca80aabe64f392553ce738):**
    - Free Notion workspace featuring an itinerary database, budget converter, and eSIM setup hub. Duplicate directly into your Notion workspace with one click. Local source: [notion/](notion/).
-10. **[CodePen Interactive Widget: Vietnam Data Calculator & APN Assistant (Live)](https://codepen.io/Nicky666666/pen/VYpdqGW):**
+11. **[CodePen Interactive Widget: Vietnam Data Calculator & APN Assistant (Live)](https://codepen.io/Nicky666666/pen/VYpdqGW):**
     - Interactive embeddable web widget for estimating daily GB requirements and instant APN troubleshooting. Local source: [codepen](codepen/).
-11. **[Observable HQ Notebook: Cellular Latency & QoS Distribution (Live)](https://observablehq.com/@kovitel/empirical-cellular-latency-and-qo-s-across-vietnam-2026):**
+12. **[Observable HQ Notebook: Cellular Latency & QoS Distribution (Live)](https://observablehq.com/@kovitel/empirical-cellular-latency-and-qo-s-across-vietnam-2026):**
     - D3.js interactive notebook analyzing latency distributions and S8 Home Routing penalties across Vietnam. Official publication: [@kovitel](https://observablehq.com/@kovitel). Local source: [observable](observable/).
-12. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
+13. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
     - Containerized diagnostic agent for automated ICMP ping and traceroute benchmarking.
-13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report (Live)](https://substack.com/@kovitel/note/c-367119955):**
+14. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report (Live)](https://substack.com/@kovitel/note/c-367119955):**
     - Deep-dive traveler dispatch on motorcycle route connectivity across Northern Vietnam. Profile: [@kovitel](https://substack.com/@kovitel).
-14. **[Interactive Leaflet & uMap Web Map](maps/interactive.html):**
+15. **[Interactive Leaflet & uMap Web Map](maps/interactive.html):**
     - Fullscreen interactive map plotting 5G microcells, mountain passes, and medical facilities across Vietnam.
-15. **[OpenStreetMap Diary: Mapping Ha Giang Base Stations](osm/):**
+16. **[OpenStreetMap Diary: Mapping Ha Giang Base Stations](osm/):**
     - Field cartographic notes on GPS accuracy and tower line-of-sight propagation.
-16. **[Replit Cloud Playground (Live)](https://replit.com/@takayui89/awesome-vietnam-travel-connectivity):**
+17. **[Replit Cloud Playground (Live)](https://replit.com/@takayui89/awesome-vietnam-travel-connectivity):**
     - Instant browser-based Python environment to validate smartphone eSIM hardware and calculate data needs in the cloud. Local source: [replit](replit/).
-17. **[Coda / Superhuman Docs Interactive Template (Live)](https://docs.superhuman.com/@kovitel/vietnam-backpacking-telecom-route-cost-calculator):**
+18. **[Coda / Superhuman Docs Interactive Template (Live)](https://docs.superhuman.com/@kovitel/vietnam-backpacking-telecom-route-cost-calculator):**
     - Dynamic travel expense, data calculator, and carrier comparison document template published under [@kovitel](https://docs.superhuman.com/@kovitel). Free to duplicate and plan interactive itineraries. Local source: [coda/](coda/).
-18. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
+19. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
     - Formal economic and engineering preprint evaluating telecommunications impact on inbound tourism.
-19. **[Internet Archive Digital Preservation (archive.org)](archive/):**
+20. **[Internet Archive Digital Preservation (archive.org)](archive/):**
     - Permanent historical preservation package for open cellular datasets and survival kits.
-20. **[Digital Travel Magazine (Issuu & Flipbook Edition)](magazine/vietnam_travel_connectivity_magazine_2026.html):**
+21. **[Digital Travel Magazine (Issuu & Flipbook Edition)](magazine/vietnam_travel_connectivity_magazine_2026.html):**
     - Multi-page travel editorial layout and publication format.
-21. **[Hashnode Technical Publication: Demystifying S8 Home Routing (Live)](https://kovitel.hashnode.dev/demystifying-s8-home-routing-how-subsea-packet-tunneling-degrades-travel-apps-in-southeast-asia):**
+22. **[Hashnode Technical Publication: Demystifying S8 Home Routing (Live)](https://kovitel.hashnode.dev/demystifying-s8-home-routing-how-subsea-packet-tunneling-degrades-travel-apps-in-southeast-asia):**
     - Deep-dive technical article explaining GTP-U encapsulation and subsea cable RTT overhead on our official publication [Kovitel Telecom & Travel Tech](https://kovitel.hashnode.dev/). Canonical reference: [Kovitel Speedtest Benchmark](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026). Local copy: [article](articles/article_hashnode_latency_analysis.md).
-22. **[Canva Community Travel Infographic Templates](design/):**
+23. **[Canva Community Travel Infographic Templates](design/):**
     - Customizable social media graphics and 14-day travel route cheat sheets.
-23. **[Travel Audio Survival Guide (SoundCloud & Podcasts)](audio/):**
+24. **[Travel Audio Survival Guide (SoundCloud & Podcasts)](audio/):**
     - Phonetic pronunciation scripts for ordering rides, Wi-Fi requests, and emergency communication.
-24. **[Dev.to Technical Article: The Hidden Latency Trap of Travel eSIMs (Live)](https://dev.to/nicky666666/why-we-open-sourced-vietnams-mobile-connectivity-data-the-hidden-latency-trap-of-travel-esims-3dlh):**
+25. **[Dev.to Technical Article: The Hidden Latency Trap of Travel eSIMs (Live)](https://dev.to/nicky666666/why-we-open-sourced-vietnams-mobile-connectivity-data-the-hidden-latency-trap-of-travel-esims-3dlh):**
     - Empirical analysis on S8 Home Routing vs. domestic Viettel 5G core network packet routing.
-25. **[Gumroad Digital Survival Kit & Pocket Guide ($0 Free Download)](https://1449470217236.gumroad.com/l/vietnam-connectivity-kit-2026):**
+26. **[Gumroad Digital Survival Kit & Pocket Guide ($0 Free Download)](https://1449470217236.gumroad.com/l/vietnam-connectivity-kit-2026):**
     - The definitive 2026 field connectivity guide, APN cheat sheet, and emergency SOS contacts for travelers in Vietnam.
-26. **[GitHub Official Release v2026.1.0 (Live Assets)](https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity/releases/tag/v2026.1.0):**
+27. **[GitHub Official Release v2026.1.0 (Live Assets)](https://github.com/iZenDeveloper/awesome-vietnam-travel-connectivity/releases/tag/v2026.1.0):**
     - Complete survival bundle distribution: Presentation PDF, CSV speedtest dataset (500 pts), Notion Markdown template, and Coda setup file.
-27. **[GitHub Gist: Developer eSIM & 5G APN Quick Reference (Live Gist)](https://gist.github.com/iZenDeveloper/624b0457946a7039793a6995f878d819):**
+28. **[GitHub Gist: Developer eSIM & 5G APN Quick Reference (Live Gist)](https://gist.github.com/iZenDeveloper/624b0457946a7039793a6995f878d819):**
     - Public developer cheat sheet containing carrier APNs, S8 Home Routing architecture diagrams, and Python CLI verification snippets.
 
 ---
