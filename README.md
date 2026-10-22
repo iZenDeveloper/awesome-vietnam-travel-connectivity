@@ -208,8 +208,8 @@ We believe in open data and practical tools to empower independent travelers:
    - Free Notion workspace featuring an itinerary database, budget converter, and eSIM setup hub.
 10. **[CodePen Interactive Widget: Vietnam Data Calculator & APN Assistant (Live)](https://codepen.io/Nicky666666/pen/VYpdqGW):**
     - Interactive embeddable web widget for estimating daily GB requirements and instant APN troubleshooting. Local source: [codepen](codepen/).
-11. **[Observable HQ Notebook: Cellular Latency & QoS Distribution](observable/):**
-    - D3.js interactive notebook analyzing network latency curves.
+11. **[Observable HQ Notebook: Cellular Latency & QoS Distribution (Live)](https://observablehq.com/@kovitel/empirical-cellular-latency-and-qo-s-across-vietnam-2026):**
+    - D3.js interactive notebook analyzing latency distributions and S8 Home Routing penalties across Vietnam. Official publication: [@kovitel](https://observablehq.com/@kovitel). Local source: [observable](observable/).
 12. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
     - Containerized diagnostic agent for automated ICMP ping and traceroute benchmarking.
 13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report (Live)](https://substack.com/@kovitel/note/c-367119955):**
