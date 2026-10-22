@@ -1,0 +1,21 @@
+{
+  "name": "kovitel-telecom-api",
+  "version": "1.0.0",
+  "description": "Production REST API & OpenAI ChatGPT Plugin Action for Kovitel Vietnam Travel eSIM",
+  "type": "module",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "keywords": [
+    "chatgpt-plugin",
+    "gpt-actions",
+    "openapi",
+    "kovitel",
+    "esim",
+    "vietnam",
+    "viettel-5g"
+  ],
+  "author": "Kovitel Travel Telecom (https://kovitel.com)",
+  "license": "MIT"
+}

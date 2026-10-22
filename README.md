@@ -246,6 +246,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Public developer cheat sheet containing carrier APNs, S8 Home Routing architecture diagrams, and Python CLI verification snippets.
 29. **[Official OpenAI Custom GPT: Vietnam Travel eSIM & 5G Viettel Expert (Live on ChatGPT)](https://chatgpt.com/g/g-6ad9acee640881918ab7ac5607185bee-vietnam-travel-esim-5g-viettel-expert):**
     - Interactive 24/7 AI travel telecom consultant deployed on OpenAI ChatGPT. Pre-loaded with official Kovitel device compatibility matrix, 500-point 5G speedtest datasets, and emergency APN rescue procedures for Vietnam travelers. Compatible with ChatGPT Plus and Team.
+30. **[Production Telecom REST API & ChatGPT Plugin Action (Live on Vercel)](https://kovitel-telecom-api.vercel.app):**
+    - Serverless production API powering automated device compatibility checks, daily GB calculations, and live carrier APN settings. Features official OpenAPI 3.1 schema and `.well-known/ai-plugin.json` for ChatGPT Actions. Source: [packages/kovitel-telecom-api](packages/kovitel-telecom-api/).
 
 ---
 
