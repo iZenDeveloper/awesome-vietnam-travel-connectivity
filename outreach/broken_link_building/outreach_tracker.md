@@ -7,11 +7,11 @@
 
 | ID | Target Organization | Contact Person / Email | Issue Detected | Proposed Asset | Email Draft Status | Sent Date | Response Status | Live Backlink |
 | :---: | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| **BL-001** | **Friends Travel Vietnam** | `info@friendstravelvietnam.com` | `/travel-tips/vietnam-sim-card` (404) | [Viettel 5G Core eSIM](https://kovitel.com/products/premium-vietnam-esim-5g) | 🚀 1-Click Launcher Ready | 22/10/2026 | ⏳ Awaiting Send | Pending |
-| **BL-002** | **Traveltomtom** | `tom@traveltomtom.net` | `/best-prepaid-vietnam-sim-card` (404) | [Viettel 5G Product](https://kovitel.com/products/premium-vietnam-esim-5g) | 🚀 1-Click Launcher Ready | 22/10/2026 | ⏳ Awaiting Send | Pending |
-| **BL-003** | **Nerd Nomads** | `contact@nerdnomads.com` | `/vietnam-sim-card` (404) | [5G Speedtest Whitepaper](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | 🚀 1-Click Launcher Ready | 22/10/2026 | ⏳ Awaiting Send | Pending |
-| **BL-004** | **VietAsia Travel** | `support@vietasiatravel.com` | `/travel-guide/how-to-stay-connected-in-vietnam` (404) | [Kovitel Homepage](https://kovitel.com) | 🚀 1-Click Launcher Ready | 22/10/2026 | ⏳ Awaiting Send | Pending |
-| **BL-005** | **Day Trips Vietnam** | `hello@daytripsvietnam.com` | `/vietnam-sim-card` (404) | [Viettel 5G Product](https://kovitel.com/products/premium-vietnam-esim-5g) | 🚀 1-Click Launcher Ready | 22/10/2026 | ⏳ Awaiting Send | Pending |
+| **BL-001** | **Friends Travel Vietnam** | `info@friendstravelvietnam.com` | `/travel-tips/vietnam-sim-card` (404) | [Viettel 5G Core eSIM](https://kovitel.com/products/premium-vietnam-esim-5g) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
+| **BL-002** | **Traveltomtom** | `tom@traveltomtom.net` | `/best-prepaid-vietnam-sim-card` (404) | [Viettel 5G Product](https://kovitel.com/products/premium-vietnam-esim-5g) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
+| **BL-003** | **Nerd Nomads** | `contact@nerdnomads.com` | `/vietnam-sim-card` (404) | [5G Speedtest Whitepaper](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
+| **BL-004** | **VietAsia Travel** | `support@vietasiatravel.com` | `/travel-guide/how-to-stay-connected-in-vietnam` (404) | [Kovitel Homepage](https://kovitel.com) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
+| **BL-005** | **Day Trips Vietnam** | `hello@daytripsvietnam.com` | `/vietnam-sim-card` (404) | [Viettel 5G Product](https://kovitel.com/products/premium-vietnam-esim-5g) | ✅ Automated Sent (ego lite) | 22/10/2026 | ⏳ Awaiting Reply | Pending |
 | **BL-006** | **Wikivoyage** | `en.wikivoyage.org` | Vietnam #Connect Outdated Info | [Viettel 5G APN Guide](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026) | 📝 Wikitext Diff Prepared | 22/10/2026 | 🟢 Wiki Ready | Pending Edit |
 
 ---
