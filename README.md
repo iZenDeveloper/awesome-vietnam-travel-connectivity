@@ -220,8 +220,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Field cartographic notes on GPS accuracy and tower line-of-sight propagation.
 16. **[Replit Cloud Playground (Live)](https://replit.com/@takayui89/awesome-vietnam-travel-connectivity):**
     - Instant browser-based Python environment to validate smartphone eSIM hardware and calculate data needs in the cloud. Local source: [replit](replit/).
-17. **[Coda.io Gallery Interactive Template](coda/):**
-    - Dynamic travel expense and carrier comparison document template.
+17. **[Coda / Superhuman Docs Interactive Template (Live)](https://docs.superhuman.com/@kovitel/vietnam-backpacking-telecom-route-cost-calculator):**
+    - Dynamic travel expense, data calculator, and carrier comparison document template published under [@kovitel](https://docs.superhuman.com/@kovitel). Free to duplicate and plan interactive itineraries. Local source: [coda/](coda/).
 18. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
     - Formal economic and engineering preprint evaluating telecommunications impact on inbound tourism.
 19. **[Internet Archive Digital Preservation (archive.org)](archive/):**
