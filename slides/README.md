@@ -7,6 +7,7 @@
 A 8-slide presentation deck covering the Vietnam telecommunications landscape, carrier frequency bands, local core vs. international roaming latency benchmarks, and practical tourist connectivity tips.
 
 ### Viewing & Publishing Options:
+- **Direct PDF Download:** [Download High-Res Presentation PDF (vietnam_telecom_tourist_guide_2026.pdf)](vietnam_telecom_tourist_guide_2026.pdf)
 - **Interactive Web Slides:** Open `vietnam_telecom_tourist_guide_2026.html` directly in any web browser.
 - **Export to PDF:** Open `vietnam_telecom_tourist_guide_2026.html` > Press `Ctrl+P` (or `Cmd+P`) > Save as PDF.
 - **Upload to SlideShare / Speaker Deck:** Upload the generated PDF directly to SlideShare or Speaker Deck for instant DR 88–92 authority links.

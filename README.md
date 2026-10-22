@@ -201,7 +201,7 @@ We believe in open data and practical tools to empower independent travelers:
 6. **[Interactive Vietnam Travel Connectivity Decision Simulator on itch.io (Live Game)](https://nicky666666.itch.io/vietnam-5g-connectivity-simulator):**
    - Playable HTML5 browser game simulating touchdown scenarios, airport touts, APN setup, and mountain loop connectivity challenges. Also playable on [GitHub Pages](simulator/index.html).
 7. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
-   - 8-slide presentation deck designed for SlideShare and Speaker Deck.
+   - 8-slide presentation deck covering network architecture, carrier comparisons, and tourist survival tips. [View HTML Deck](slides/vietnam_telecom_tourist_guide_2026.html) | [Download Presentation PDF](slides/vietnam_telecom_tourist_guide_2026.pdf).
 8. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
    - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
 9. **[Notion Template: Vietnam Solo Travel & Telecom Planner 2026 (Live Public Site)](https://sprinkle-position-fcf.notion.site/Vietnam-Solo-Travel-Expense-Telecom-Planner-2026-Edition-24af777144ca80aabe64f392553ce738):**
