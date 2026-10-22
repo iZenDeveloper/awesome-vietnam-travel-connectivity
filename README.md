@@ -204,6 +204,16 @@ We believe in open data and practical tools to empower independent travelers:
    - 8-slide presentation deck designed for SlideShare and Speaker Deck.
 8. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
    - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
+9. **[Notion Template: Vietnam Solo Travel & Telecom Planner 2026](notion/):**
+   - Free Notion workspace featuring an itinerary database, budget converter, and eSIM setup hub.
+10. **[CodePen Widget: Vietnam Data Calculator & APN Assistant](codepen/):**
+    - Interactive embeddable web widget for estimating daily GB requirements.
+11. **[Observable HQ Notebook: Cellular Latency & QoS Distribution](observable/):**
+    - D3.js interactive notebook analyzing network latency curves.
+12. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
+    - Containerized diagnostic agent for automated ICMP ping and traceroute benchmarking.
+13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report](substack/):**
+    - Deep-dive traveler dispatch on motorcycle route connectivity across Northern Vietnam.
 
 ---
 
