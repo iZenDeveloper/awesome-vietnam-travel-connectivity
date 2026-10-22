@@ -206,8 +206,8 @@ We believe in open data and practical tools to empower independent travelers:
    - Side-by-side evaluation of Viettel 5G vs. Vinaphone vs. Airalo vs. Holafly vs. Airport SIMs.
 9. **[Notion Template: Vietnam Solo Travel & Telecom Planner 2026](notion/):**
    - Free Notion workspace featuring an itinerary database, budget converter, and eSIM setup hub.
-10. **[CodePen Widget: Vietnam Data Calculator & APN Assistant](codepen/):**
-    - Interactive embeddable web widget for estimating daily GB requirements.
+10. **[CodePen Interactive Widget: Vietnam Data Calculator & APN Assistant (Live)](https://codepen.io/Nicky666666/pen/VYpdqGW):**
+    - Interactive embeddable web widget for estimating daily GB requirements and instant APN troubleshooting. Local source: [codepen](codepen/).
 11. **[Observable HQ Notebook: Cellular Latency & QoS Distribution](observable/):**
     - D3.js interactive notebook analyzing network latency curves.
 12. **[Docker Image: Vietnam Cellular Speedtest Agent](docker/):**
