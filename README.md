@@ -214,6 +214,16 @@ We believe in open data and practical tools to empower independent travelers:
     - Containerized diagnostic agent for automated ICMP ping and traceroute benchmarking.
 13. **[Substack Field Dispatch: The Hà Giang Loop Connectivity Report](substack/):**
     - Deep-dive traveler dispatch on motorcycle route connectivity across Northern Vietnam.
+14. **[Interactive Leaflet & uMap Web Map](maps/interactive.html):**
+    - Fullscreen interactive map plotting 5G microcells, mountain passes, and medical facilities across Vietnam.
+15. **[OpenStreetMap Diary: Mapping Ha Giang Base Stations](osm/):**
+    - Field cartographic notes on GPS accuracy and tower line-of-sight propagation.
+16. **[Replit Cloud Playground](replit/):**
+    - Instant browser-based Python environment to validate smartphone eSIM hardware and calculate data needs.
+17. **[Coda.io Gallery Interactive Template](coda/):**
+    - Dynamic travel expense and carrier comparison document template.
+18. **[Academic Working Paper: Tourism Economics & Latency (SSRN & ResearchGate)](academic/):**
+    - Formal economic and engineering preprint evaluating telecommunications impact on inbound tourism.
 
 ---
 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam 5G Cellular Coverage & Tourist Safety Map (2026) - Kovitel</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #fff; }
+  #map { width: 100vw; height: 100vh; }
+  .map-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 20px 24px;
+    max-width: 380px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  }
+  .overlay-title { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .overlay-desc { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; margin-bottom: 14px; }
+  .legend { display: flex; flex-direction: column; gap: 6px; font-size: 0.8rem; margin-bottom: 16px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-5g { background: #10b981; }
+  .dot-pass { background: #38bdf8; }
+  .dot-med { background: #ef4444; }
+  .btn-cta {
+    display: block;
+    background: #ef4444;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-cta:hover { background: #dc2626; }
+  .leaflet-popup-content-wrapper {
+    background: #1e293b;
+    color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  .leaflet-popup-content { margin: 16px; line-height: 1.5; font-size: 0.9rem; }
+  .leaflet-popup-content h4 { color: #fff; margin-bottom: 6px; font-size: 1rem; }
+  .popup-badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 8px; }
+  .badge-5g { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+  .badge-pass { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+  .badge-med { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+  .popup-cta { display: inline-block; margin-top: 10px; color: #38bdf8; font-weight: bold; text-decoration: none; font-size: 0.85rem; }
+  .popup-cta:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="map-overlay">
+  <div class="overlay-title">🇻🇳 Vietnam 5G & Safety Map</div>
+  <div class="overlay-desc">Live geospatial audit of cellular towers, high-altitude mountain passes, and emergency clinics across Vietnam.</div>
+  
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot dot-5g"></div><span>Viettel Sub-6GHz 5G Microcell (> 200 Mbps)</span></div>
+    <div class="legend-item"><div class="legend-dot dot-pass"></div><span>Mountain Pass & Trail Coverage (Ha Giang / Sa Pa)</span></div>
+    <div class="legend-item"><div class="legend-dot dot-med"></div><span>International Medical Emergency Hub (24/7)</span></div>
+  </div>
+
+  <a href="https://kovitel.com/products/premium-vietnam-esim-5g" target="_blank" class="btn-cta">
+    Get Pre-Activated Viettel 5G eSIM 🛒
+  </a>
+</div>
+
+<div id="map"></div>
+
+<script>
+const map = L.map('map').setView([16.0544, 107.5], 6);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a> | Data by <a href="https://kovitel.com">Kovitel.com</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+const LOCATIONS = [
+  {
+    name: "Nội Bài International Airport (HAN)",
+    category: "Transit Hub",
+    type: "5g",
+    coords: [21.2212, 105.8072],
+    speed: "312 Mbps Down / 14ms Ping",
+    desc: "Terminal 2 International Arrivals. Active Viettel 5G core network. Order Grab instantly upon deplaning."
+  },
+  {
+    name: "Tân Sơn Nhất Airport (SGN)",
+    category: "Transit Hub",
+    type: "5g",
+    coords: [10.8185, 106.6588],
+    speed: "345 Mbps Down / 13ms Ping",
+    desc: "Primary southern transit gateway. Instant QR activation supported."
+  },
+  {
+    name: "Mã Pí Lèng Skywalk (1,500m)",
+    category: "Mountain Loop Pass",
+    type: "pass",
+    coords: [23.2427, 105.4243],
+    speed: "165 Mbps Down / 22ms Ping",
+    desc: "Hà Giang motorbike circuit cliffside. Viettel maintains 4-5 bars of LTE/5G where other SIMs lose service."
+  },
+  {
+    name: "Fansipan Summit (3,143m)",
+    category: "Mountain Peak",
+    type: "5g",
+    coords: [22.3034, 103.7752],
+    speed: "250 Mbps Down / 18ms Ping",
+    desc: "Dedicated Viettel 5G microcell installed at the summit pagoda."
+  },
+  {
+    name: "Tràng An Grottoes Dock",
+    category: "Heritage Corridor",
+    type: "pass",
+    coords: [20.2539, 105.9083],
+    speed: "215 Mbps Down / 16ms Ping",
+    desc: "100% signal coverage along limestone river grottos."
+  },
+  {
+    name: "Bà Nà Hills (Golden Bridge)",
+    category: "Landmark",
+    type: "5g",
+    coords: [15.9953, 107.9964],
+    speed: "280 Mbps Down / 15ms Ping",
+    desc: "Giant stone hands walkway. Continuous 5G coverage across mountain resort."
+  },
+  {
+    name: "Hội An Ancient Town",
+    category: "Historic Town",
+    type: "5g",
+    coords: [15.8774, 108.3268],
+    speed: "235 Mbps Down / 17ms Ping",
+    desc: "Lantern river market. Dense microcell deployment eliminates night crowd congestion."
+  },
+  {
+    name: "Phú Quốc Cable Car",
+    category: "Island Archipelago",
+    type: "pass",
+    coords: [10.0278, 104.0111],
+    speed: "220 Mbps Down / 18ms Ping",
+    desc: "Continuous marine cell coverage across An Thoi sea crossing."
+  },
+  {
+    name: "Hanoi French Hospital (L'Hôpital Français)",
+    category: "Medical Emergency",
+    type: "med",
+    coords: [20.9996, 105.8427],
+    speed: "24/7 International ER",
+    desc: "International emergency clinic. Phone: +84 24 3577 1100."
+  },
+  {
+    name: "FV Hospital (Hôpital Franco-Vietnamien) HCMC",
+    category: "Medical Emergency",
+    type: "med",
+    coords: [10.7303, 106.7204],
+    speed: "24/7 JCI Hospital",
+    desc: "Premier international hospital in District 7. Phone: +84 28 5411 3500."
+  }
+];
+
+LOCATIONS.forEach(loc => {
+  const color = loc.type === '5g' ? '#10b981' : (loc.type === 'pass' ? '#38bdf8' : '#ef4444');
+  const badgeClass = loc.type === '5g' ? 'badge-5g' : (loc.type === 'pass' ? 'badge-pass' : 'badge-med');
+
+  const circle = L.circleMarker(loc.coords, {
+    radius: 9,
+    fillColor: color,
+    color: '#fff',
+    weight: 2,
+    opacity: 1,
+    fillOpacity: 0.9
+  }).addTo(map);
+
+  const popupContent = `
+    <h4>${loc.name}</h4>
+    <span class="popup-badge ${badgeClass}">${loc.category}</span>
+    <p><strong>Performance:</strong> ${loc.speed}</p>
+    <p style="margin-top:6px; color:#cbd5e1;">${loc.desc}</p>
+    <a href="https://kovitel.com/products/premium-vietnam-esim-5g" target="_blank" class="popup-cta">Order Viettel 5G eSIM for this region ➔</a>
+  `;
+
+  circle.bindPopup(popupContent);
+});
+</script>
+
+</body>
+</html>
