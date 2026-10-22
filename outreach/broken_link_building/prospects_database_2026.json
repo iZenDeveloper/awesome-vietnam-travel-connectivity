@@ -1,0 +1,90 @@
+[
+  {
+    "id": "BL-001",
+    "target_site": "Traveltomtom (Tom Grond)",
+    "domain_authority": "DR 68 / DA 55",
+    "dead_url": "https://www.traveltomtom.net/destinations/asia/vietnam/best-prepaid-vietnam-sim-card",
+    "issue_type": "HTTP 404 Dead Page (Legacy Top-Ranked Asset)",
+    "referring_pages": [
+      "https://gmpremiumhotel.com/hanoi-travel-guide-sim-cards",
+      "https://friendstravelvietnam.com/vietnam-tourist-tips",
+      "Multiple TripAdvisor & Reddit Travel Itinerary Threads"
+    ],
+    "proposed_replacement": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "replacement_anchor": "Kovitel Viettel 5G Standalone Core eSIM",
+    "contact_channel": "tom@traveltomtom.net / Contact Form",
+    "status": "Ready for Outreach"
+  },
+  {
+    "id": "BL-002",
+    "target_site": "Nerd Nomads (Maria & Espen)",
+    "domain_authority": "DR 62 / DA 51",
+    "dead_url": "https://nerdnomads.com/vietnam-sim-card",
+    "issue_type": "HTTP 404 Broken Guide URL",
+    "referring_pages": [
+      "Southeast Asia Backpacking Resource Lists",
+      "Scandinavia Travel Community Guides",
+      "Vietnam 2-Week Itinerary Articles"
+    ],
+    "proposed_replacement": "https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026",
+    "replacement_anchor": "Vietnam 5G Connectivity & eSIM Field Guide 2026",
+    "contact_channel": "contact@nerdnomads.com / IG @nerdnomads",
+    "status": "Ready for Outreach"
+  },
+  {
+    "id": "BL-003",
+    "target_site": "Wikivoyage (Wikimedia Foundation)",
+    "domain_authority": "DR 98 / DA 92",
+    "dead_url": "https://en.wikivoyage.org/wiki/Vietnam#Connect",
+    "issue_type": "Outdated Operator & 2G/3G Sunset Alert",
+    "referring_pages": [
+      "Wikipedia.org / Wikivoyage.org Global Network"
+    ],
+    "proposed_replacement": "https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026",
+    "replacement_anchor": "Kovitel Viettel 5G Core Network & APN Reference",
+    "contact_channel": "Community Wiki Edit (Open Contribution)",
+    "status": "Ready for Edit"
+  },
+  {
+    "id": "BL-004",
+    "target_site": "Friends Travel Vietnam",
+    "domain_authority": "DR 45 / DA 38",
+    "dead_url": "https://friendstravelvietnam.com/travel-tips/vietnam-sim-card",
+    "issue_type": "HTTP 404 URL Restructure",
+    "referring_pages": [
+      "Local Tour Bookings & Hanoi Travel Hubs"
+    ],
+    "proposed_replacement": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "replacement_anchor": "Vietnam Direct Viettel 5G eSIM",
+    "contact_channel": "info@friendstravelvietnam.com",
+    "status": "Ready for Outreach"
+  },
+  {
+    "id": "BL-005",
+    "target_site": "VietAsia Travel",
+    "domain_authority": "DR 42 / DA 35",
+    "dead_url": "https://vietasiatravel.com/travel-guide/how-to-stay-connected-in-vietnam",
+    "issue_type": "HTTP 404 Broken Travel Guide Link",
+    "referring_pages": [
+      "Indochina Tour Portals & Southeast Asia Travel Agencies"
+    ],
+    "proposed_replacement": "https://kovitel.com",
+    "replacement_anchor": "Kovitel Vietnam Travel eSIM",
+    "contact_channel": "support@vietasiatravel.com",
+    "status": "Ready for Outreach"
+  },
+  {
+    "id": "BL-006",
+    "target_site": "Day Trips Vietnam",
+    "domain_authority": "DR 39 / DA 31",
+    "dead_url": "https://daytripsvietnam.com/vietnam-sim-card",
+    "issue_type": "HTTP 404 Dead Content Link",
+    "referring_pages": [
+      "Day Tours & Excursions Resource Blogs"
+    ],
+    "proposed_replacement": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "replacement_anchor": "Official Viettel 5G eSIM",
+    "contact_channel": "hello@daytripsvietnam.com",
+    "status": "Ready for Outreach"
+  }
+]
