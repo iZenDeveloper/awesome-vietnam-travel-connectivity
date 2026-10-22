@@ -244,6 +244,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Complete survival bundle distribution: Presentation PDF, CSV speedtest dataset (500 pts), Notion Markdown template, and Coda setup file.
 28. **[GitHub Gist: Developer eSIM & 5G APN Quick Reference (Live Gist)](https://gist.github.com/iZenDeveloper/624b0457946a7039793a6995f878d819):**
     - Public developer cheat sheet containing carrier APNs, S8 Home Routing architecture diagrams, and Python CLI verification snippets.
+29. **[Official OpenAI Custom GPT: Vietnam Travel eSIM & 5G Viettel Expert (Live on ChatGPT)](https://chatgpt.com/g/g-6ad9acee640881918ab7ac5607185bee-vietnam-travel-esim-5g-viettel-expert):**
+    - Interactive 24/7 AI travel telecom consultant deployed on OpenAI ChatGPT. Pre-loaded with official Kovitel device compatibility matrix, 500-point 5G speedtest datasets, and emergency APN rescue procedures for Vietnam travelers. Compatible with ChatGPT Plus and Team.
 
 ---
 
