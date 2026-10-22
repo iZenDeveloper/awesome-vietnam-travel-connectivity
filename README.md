@@ -228,8 +228,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Permanent historical preservation package for open cellular datasets and survival kits.
 20. **[Digital Travel Magazine (Issuu & Flipbook Edition)](magazine/vietnam_travel_connectivity_magazine_2026.html):**
     - Multi-page travel editorial layout and publication format.
-21. **[Network Protocol Analysis: Demystifying S8 Home Routing](articles/hashnode_article.md):**
-    - Deep-dive technical article explaining GTP-U encapsulation and subsea cable RTT overhead.
+21. **[Hashnode Technical Publication: Demystifying S8 Home Routing (Live)](https://kovitel.hashnode.dev/demystifying-s8-home-routing-how-subsea-packet-tunneling-degrades-travel-apps-in-southeast-asia):**
+    - Deep-dive technical article explaining GTP-U encapsulation and subsea cable RTT overhead on our official publication [Kovitel Telecom & Travel Tech](https://kovitel.hashnode.dev/). Canonical reference: [Kovitel Speedtest Benchmark](https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026). Local copy: [article](articles/article_hashnode_latency_analysis.md).
 22. **[Canva Community Travel Infographic Templates](design/):**
     - Customizable social media graphics and 14-day travel route cheat sheets.
 23. **[Travel Audio Survival Guide (SoundCloud & Podcasts)](audio/):**
