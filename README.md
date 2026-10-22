@@ -192,14 +192,14 @@ We believe in open data and practical tools to empower independent travelers:
    - Install via `pip install vietnam-esim-checker` to verify device eSIM support and retrieve carrier APN settings.
 2. **[Node.js Module: vietnam-esim-config](packages/npm-vietnam-esim-config/):**
    - Install via `npm install vietnam-esim-config` for developer integration of carrier APNs and frequencies.
-3. **[Vietnam Cellular Speedtest & Latency Dataset (500 Records)](data/vietnam_tourist_speedtest_benchmark_2026.csv):**
-   - Empirical field data measuring 5G/4G download, upload, ping RTT, jitter, and RSRP across 30 tourist destinations. Curated by [Kovitel Research](https://kovitel.com).
+3. **[Vietnam Cellular Speedtest & Latency Dataset on Kaggle (Live Public)](https://www.kaggle.com/datasets/ttekmind/vietnam-5g-speedtest-and-latency-benchmark-2026):**
+   - 500 empirical field measurements across 30 tourist spots comparing Viettel 5G vs. international roaming MVNOs. Local file: [CSV Dataset](data/vietnam_tourist_speedtest_benchmark_2026.csv). Curated by [Kovitel Research](https://kovitel.com).
 4. **[Whitepaper: Local Core Network Latency vs. Roaming Proxy Routing](docs/whitepaper_roaming_vs_local_core_latency.md):**
    - Deep-dive technical audit explaining why international roaming profiles add a 220ms+ latency penalty on Vietnam networks.
 5. **[Google My Maps: Vietnam 5G Viettel & Tourist Safety Map (Live Public View)](https://www.google.com/maps/d/viewer?mid=1n8UqSlSaCdxIlZaPCGaBlotlTRM9Fbg):**
    - 12 critical connectivity checkpoints (Ha Giang Mã Pí Lèng, Sa Pa Fansipan, airport arrival halls, international hospitals, and Kovitel 24/7 technical rescue). [KML/GeoJSON source](maps/).
-6. **[Interactive Vietnam Travel Connectivity Decision Simulator](simulator/index.html):**
-   - Lightweight browser-based game simulating touchdown scenarios, APN setup, and mountain loop connectivity challenges.
+6. **[Interactive Vietnam Travel Connectivity Decision Simulator on itch.io (Live Game)](https://nicky666666.itch.io/vietnam-5g-connectivity-simulator):**
+   - Playable HTML5 browser game simulating touchdown scenarios, airport touts, APN setup, and mountain loop connectivity challenges. Also playable on [GitHub Pages](simulator/index.html).
 7. **[Presentation Slide Deck: Vietnam Telecom & Tourist Connectivity](slides/vietnam_telecom_tourist_guide_2026.html):**
    - 8-slide presentation deck designed for SlideShare and Speaker Deck.
 8. **[Airtable Master Carrier Comparison Matrix](https://airtable.com/universe):**
@@ -236,6 +236,8 @@ We believe in open data and practical tools to empower independent travelers:
     - Phonetic pronunciation scripts for ordering rides, Wi-Fi requests, and emergency communication.
 24. **[Dev.to Technical Article: The Hidden Latency Trap of Travel eSIMs (Live)](https://dev.to/nicky666666/why-we-open-sourced-vietnams-mobile-connectivity-data-the-hidden-latency-trap-of-travel-esims-3dlh):**
     - Empirical analysis on S8 Home Routing vs. domestic Viettel 5G core network packet routing.
+25. **[Gumroad Digital Survival Kit & Pocket Guide ($0 Free Download)](https://1449470217236.gumroad.com/l/vietnam-connectivity-kit-2026):**
+    - The definitive 2026 field connectivity guide, APN cheat sheet, and emergency SOS contacts for travelers in Vietnam.
 
 ---
 
