@@ -8,8 +8,12 @@
       --bg: #0f172a;
       --card-bg: #1e293b;
       --border: #334155;
-      --primary: #3b82f6;
-      --primary-hover: #2563eb;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --outlook: #0078d4;
+      --outlook-hover: #106ebe;
+      --gmail: #ea4335;
+      --gmail-hover: #d93025;
       --success: #10b981;
       --text: #f8fafc;
       --text-muted: #94a3b8;
@@ -26,11 +30,11 @@
       align-items: center;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       width: 100%;
     }
     header {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 20px;
     }
@@ -40,14 +44,25 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      flex-wrap: wrap;
     }
     .badge {
       font-size: 13px;
       padding: 4px 10px;
       border-radius: 9999px;
-      background: rgba(59, 130, 246, 0.2);
+      background: rgba(2, 132, 199, 0.2);
+      color: #38bdf8;
+      border: 1px solid rgba(2, 132, 199, 0.4);
+    }
+    .sender-badge {
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: rgba(0, 120, 212, 0.2);
       color: #60a5fa;
-      border: 1px solid rgba(59, 130, 246, 0.4);
+      border: 1px solid rgba(0, 120, 212, 0.5);
+      font-family: monospace;
+      font-weight: 600;
     }
     p.subtitle {
       color: var(--text-muted);
@@ -70,7 +85,7 @@
     .stat-val {
       font-size: 26px;
       font-weight: 700;
-      color: #60a5fa;
+      color: #38bdf8;
     }
     .stat-lbl {
       font-size: 13px;
@@ -170,19 +185,21 @@
       transition: all 0.2s ease;
       border: none;
     }
-    .btn-primary {
-      background: var(--primary);
+    .btn-outlook {
+      background: var(--outlook);
       color: #fff;
     }
-    .btn-primary:hover {
-      background: var(--primary-hover);
+    .btn-outlook:hover {
+      background: var(--outlook-hover);
     }
-    .btn-secondary {
+    .btn-gmail {
+      background: #2a3441;
+      color: #cbd5e1;
+      border: 1px solid var(--border);
+    }
+    .btn-gmail:hover {
       background: #334155;
-      color: #f8fafc;
-    }
-    .btn-secondary:hover {
-      background: #475569;
+      color: #fff;
     }
     .btn-copy {
       background: transparent;
@@ -211,7 +228,11 @@
 <body>
   <div class="container">
     <header>
-      <h1>Kovitel Broken Link Outreach Command Center <span class="badge">Live 2026</span></h1>
+      <h1>
+        Kovitel Broken Link Outreach Command Center 
+        <span class="badge">Live 2026</span>
+        <span class="sender-badge">From: kovitel.outreach@outlook.com</span>
+      </h1>
       <p class="subtitle">Direct 1-Click Outreach Launcher for High-DR Authority Backlinks (DR 39 - DR 98)</p>
     </header>
 
@@ -230,7 +251,7 @@
       </div>
       <div class="stat-card">
         <div class="stat-val">100%</div>
-        <div class="stat-lbl">Drafts & Pitches Prepared</div>
+        <div class="stat-lbl">Verified Outlook Senders</div>
       </div>
     </div>
 
@@ -273,12 +294,14 @@ Thank you for your fantastic dedication to inbound tourism in Vietnam!
 Warm regards,
 
 Dat Nguyen
-Telecom Partnerships Lead
+Partnerships Director
 Kovitel Travel Telecom | https://kovitel.com
+Email: kovitel.outreach@outlook.com
 WhatsApp: +84 394 678 888</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@friendstravelvietnam.com&su=Broken%20resource%20link%20on%20Friends%20Travel%20Vietnam%20(Tourist%20SIM%20section)">🚀 Open in Gmail (Pre-filled)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://outlook.live.com/mail/0/deeplink/compose?to=info@friendstravelvietnam.com&subject=Broken%20resource%20link%20on%20Friends%20Travel%20Vietnam%20(Tourist%20SIM%20section)">📬 Open in Outlook Web</a>
+        <a class="btn btn-gmail" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@friendstravelvietnam.com&su=Broken%20resource%20link%20on%20Friends%20Travel%20Vietnam%20(Tourist%20SIM%20section)">📧 Open in Gmail</a>
         <button class="btn btn-copy" onclick="copyText('s1')">📋 Copy Subject</button>
         <button class="btn btn-copy" onclick="copyText('b1')">📋 Copy Body</button>
       </div>
@@ -324,10 +347,12 @@ Best regards,
 Dat Nguyen
 Telecom Research & Growth Lead
 Kovitel Travel Telecom | https://kovitel.com
+Email: kovitel.outreach@outlook.com
 WhatsApp: +84 394 678 888</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tom@traveltomtom.net&su=Quick%20heads%20up%20regarding%20broken%20link%20on%20Traveltomtom%20(Vietnam%20SIM%20Guide)">🚀 Open in Gmail (Pre-filled)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://outlook.live.com/mail/0/deeplink/compose?to=tom@traveltomtom.net&subject=Quick%20heads%20up%20regarding%20broken%20link%20on%20Traveltomtom%20(Vietnam%20SIM%20Guide)">📬 Open in Outlook Web</a>
+        <a class="btn btn-gmail" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tom@traveltomtom.net&su=Quick%20heads%20up%20regarding%20broken%20link%20on%20Traveltomtom%20(Vietnam%20SIM%20Guide)">📧 Open in Gmail</a>
         <button class="btn btn-copy" onclick="copyText('s2')">📋 Copy Subject</button>
         <button class="btn btn-copy" onclick="copyText('b2')">📋 Copy Body</button>
       </div>
@@ -369,12 +394,14 @@ I’d also be delighted to set you up with a free Viettel 5G eSIM for testing wh
 Cheers,
 
 Dat Nguyen
-Kovitel Travel Telecom Team
-https://kovitel.com
+Telecom Outreach & Research Team
+Kovitel Travel Telecom | https://kovitel.com
+Email: kovitel.outreach@outlook.com
 WhatsApp: +84 394 678 888</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@nerdnomads.com&su=Outdated%20telecom%20note%20on%20Nerd%20Nomads%20/%20Vietnam%205G%20update">🚀 Open in Gmail (Pre-filled)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://outlook.live.com/mail/0/deeplink/compose?to=contact@nerdnomads.com&subject=Outdated%20telecom%20note%20on%20Nerd%20Nomads%20/%20Vietnam%205G%20update">📬 Open in Outlook Web</a>
+        <a class="btn btn-gmail" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@nerdnomads.com&su=Outdated%20telecom%20note%20on%20Nerd%20Nomads%20/%20Vietnam%205G%20update">📧 Open in Gmail</a>
         <button class="btn btn-copy" onclick="copyText('s3')">📋 Copy Subject</button>
         <button class="btn btn-copy" onclick="copyText('b3')">📋 Copy Body</button>
       </div>
@@ -419,10 +446,12 @@ Warm regards,
 Dat Nguyen
 Partnerships Director
 Kovitel Travel Telecom | https://kovitel.com
+Email: kovitel.outreach@outlook.com
 WhatsApp: +84 394 678 888</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=support@vietasiatravel.com&su=Broken%20resource%20link%20on%20VietAsia%20Travel%20(Stay%20Connected%20guide)">🚀 Open in Gmail (Pre-filled)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://outlook.live.com/mail/0/deeplink/compose?to=support@vietasiatravel.com&subject=Broken%20resource%20link%20on%20VietAsia%20Travel%20(Stay%20Connected%20guide)">📬 Open in Outlook Web</a>
+        <a class="btn btn-gmail" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=support@vietasiatravel.com&su=Broken%20resource%20link%20on%20VietAsia%20Travel%20(Stay%20Connected%20guide)">📧 Open in Gmail</a>
         <button class="btn btn-copy" onclick="copyText('s4')">📋 Copy Subject</button>
         <button class="btn btn-copy" onclick="copyText('b4')">📋 Copy Body</button>
       </div>
@@ -467,24 +496,26 @@ Best regards,
 Dat Nguyen
 Partnerships Director
 Kovitel Travel Telecom | https://kovitel.com
+Email: kovitel.outreach@outlook.com
 WhatsApp: +84 394 678 888</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@daytripsvietnam.com&su=Broken%20SIM%20card%20resource%20link%20on%20Day%20Trips%20Vietnam">🚀 Open in Gmail (Pre-filled)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://outlook.live.com/mail/0/deeplink/compose?to=hello@daytripsvietnam.com&subject=Broken%20SIM%20card%20resource%20link%20on%20Day%20Trips%20Vietnam">📬 Open in Outlook Web</a>
+        <a class="btn btn-gmail" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@daytripsvietnam.com&su=Broken%20SIM%20card%20resource%20link%20on%20Day%20Trips%20Vietnam">📧 Open in Gmail</a>
         <button class="btn btn-copy" onclick="copyText('s5')">📋 Copy Subject</button>
         <button class="btn btn-copy" onclick="copyText('b5')">📋 Copy Body</button>
       </div>
     </div>
 
     <!-- TARGET 6: WIKIVOYAGE (DR 98) -->
-    <div class="card" style="border: 2px solid #3b82f6;">
+    <div class="card" style="border: 2px solid #0078d4;">
       <div class="card-header">
         <div>
-          <div class="prospect-name">Wikivoyage (Wikimedia) <span class="dr-badge" style="background:rgba(59,130,246,0.3); color:#93c5fd;">DR 98 / DA 92</span></div>
+          <div class="prospect-name">Wikivoyage (Wikimedia) <span class="dr-badge" style="background:rgba(0,120,212,0.3); color:#93c5fd;">DR 98 / DA 92</span></div>
           <div style="font-size:13px; color:var(--text-muted); margin-top:4px;">Target URL: <a href="https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones" target="_blank" style="color:#60a5fa;">en.wikivoyage.org/wiki/Vietnam#Mobile_phones</a></div>
         </div>
       </div>
-      <div class="issue-box" style="background:rgba(59,130,246,0.1); border-left-color:#3b82f6; color:#bfdbfe;">
+      <div class="issue-box" style="background:rgba(0,120,212,0.1); border-left-color:#0078d4; color:#bfdbfe;">
         <strong>Opportunity:</strong> High-authority wiki reference. SogdiaRoam is already cited. We add Kovitel as an authorized Viettel 5G tourist eSIM provider alongside SogdiaRoam + nationwide 5G note.
       </div>
       <div class="field-row">
@@ -492,7 +523,7 @@ WhatsApp: +84 394 678 888</div>
         <div class="field-value body-box" id="b6">Competition is fierce: Viettel offers tourist eSIMs on its website—though the portal process can be tricky—while specialized platforms like [https://kovitel.com Kovitel] and [https://sogdiaroam.com/esim/vietnam SogdiaRoam] also provide local Viettel 5G eSIM profiles online with instant QR delivery. MobiFone offers a [https://www.mobifone.vn/tin-tuc/chi-tiet/ket-noi-de-dang-thanh-thoi-kham-pha-cung-hi-vietnam-19481 free one-day eSIM plan for tourists] with 8GB of data and unlimited access to Facebook, YouTube and TikTok included. Coverage is generally strong in cities and along major travel routes, with extensive 4G and nationwide 5G availability (Viettel has deployed 5G across all 63 provinces); speeds may be slower in remote mountainous areas. Note that legacy 2G networks have been phased out, so your device must support 4G/VoLTE or 5G.</div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" target="_blank" href="https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones">🌐 Open Wikivoyage (Edit Section 108)</a>
+        <a class="btn btn-outlook" target="_blank" href="https://en.wikivoyage.org/wiki/Vietnam#Mobile_phones">🌐 Open Wikivoyage (Edit Section 108)</a>
         <button class="btn btn-copy" onclick="copyText('b6')">📋 Copy Wikitext</button>
       </div>
     </div>

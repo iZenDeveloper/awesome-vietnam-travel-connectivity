@@ -28,9 +28,10 @@ Either way, hope this quick note helps keep your guide fresh for future traveler
 
 Best regards,
 
-**{{sender_name}}**  
+**Dat Nguyen**  
 Telecom Research & Growth Lead  
 **Kovitel Travel Telecom** | [https://kovitel.com](https://kovitel.com)  
+Email: [kovitel.outreach@outlook.com](mailto:kovitel.outreach@outlook.com)  
 WhatsApp: +84 394 678 888  
 
 ---
@@ -58,9 +59,11 @@ Happy to set you up with a free testing eSIM anytime.
 
 Cheers,
 
-**{{sender_name}}**  
-**Kovitel Travel Telecom Team**  
-[https://kovitel.com](https://kovitel.com)  
+**Dat Nguyen**  
+Telecom Outreach & Research Team  
+**Kovitel Travel Telecom** | [https://kovitel.com](https://kovitel.com)  
+Email: [kovitel.outreach@outlook.com](mailto:kovitel.outreach@outlook.com)  
+WhatsApp: +84 394 678 888  
 
 ---
 
@@ -89,6 +92,8 @@ Thank you for your fantastic dedication to inbound tourism in Vietnam!
 
 Warm regards,
 
-**{{sender_name}}**  
+**Dat Nguyen**  
 Partnerships Director  
 **Kovitel Travel Telecom** | [https://kovitel.com](https://kovitel.com)  
+Email: [kovitel.outreach@outlook.com](mailto:kovitel.outreach@outlook.com)  
+WhatsApp: +84 394 678 888  

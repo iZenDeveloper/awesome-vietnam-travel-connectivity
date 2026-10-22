@@ -17,6 +17,7 @@
 ---
 
 ## 📈 Key Campaign Metrics
+* **Outreach Sender Account:** `kovitel.outreach@outlook.com` (Official Brand Outreach)
 * **Total Prospects Identified:** 6 High-Authority Domains
 * **Average Prospect Domain Rating (DR):** **59.0** (Top tier)
 * **Value Proposition:** 100% Free 404 Fix + Complimentary 5GB/Day Viettel 5G testing eSIM
