@@ -2,6 +2,7 @@ import { URL } from 'node:url';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getDocsPages, generateLlmsTxt, renderDocsHtml, generateSitemapXml } from '../docs.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,9 +23,77 @@ export default async function handler(req, res) {
     return res.end();
   }
 
-  const parsedUrl = new URL(req.url, `https://${req.headers.host || 'api.kovitel.com'}`);
-  const pathname = parsedUrl.pathname.replace(/\/+$/, '') || '/';
+  const host = req.headers.host || 'kovitel-telecom-api.vercel.app';
+  const proto = req.headers['x-forwarded-proto'] || (host.startsWith('localhost') || host.startsWith('127.0.0.1') ? 'http' : 'https');
+  const origin = `${proto}://${host}`;
+  const parsedUrl = new URL(req.url, origin);
+  const rawPathname = parsedUrl.pathname.replace(/\/+$/, '') || '/';
+  const pathname = rawPathname;
   const query = Object.fromEntries(parsedUrl.searchParams.entries());
+
+  // Cache-Control & Vary Headers (Standard RFC compliance for CDN caching & content negotiation)
+  res.setHeader('Cache-Control', 'public, max-age=1800, must-revalidate');
+  res.setHeader('Vary', 'Accept');
+
+  // Route: /sitemap.xml (SEO & LLM Ground Truth Sitemap)
+  if (rawPathname === '/sitemap.xml') {
+    res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+    return res.end(generateSitemapXml(origin));
+  }
+
+  // Route: /llms.txt and /docs/llms.txt (Agent-Friendly Documentation Index)
+  if (rawPathname === '/llms.txt' || rawPathname === '/docs/llms.txt') {
+    res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+    return res.end(generateLlmsTxt(origin));
+  }
+
+  // Route: /docs and all /docs/* documentation subpages
+  if (rawPathname === '/docs' || rawPathname.startsWith('/docs/')) {
+    let isExplicitMd = false;
+    let cleanPath = rawPathname;
+
+    if (cleanPath.endsWith('.md')) {
+      isExplicitMd = true;
+      cleanPath = cleanPath.slice(0, -3);
+    }
+    if (cleanPath === '' || cleanPath === '/' || cleanPath === '/docs/index') {
+      cleanPath = '/docs';
+    }
+
+    const docsPages = getDocsPages(origin);
+    const docPage = docsPages[cleanPath];
+
+    if (!docPage) {
+      res.statusCode = 404;
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      return res.end(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found — Kovitel Docs</title>
+</head>
+<body style="font-family: sans-serif; background: #090a0f; color: #e2e8f0; padding: 40px; text-align: center;">
+  <h1>404 — Documentation Page Not Found</h1>
+  <p>The requested documentation resource does not exist.</p>
+  <p><a href="/docs" style="color: #e11d48;">Return to Overview</a> | <a href="/llms.txt" style="color: #38bdf8;">View /llms.txt</a></p>
+</body>
+</html>`);
+    }
+
+    // Link header pointing to alternate markdown representation
+    res.setHeader('Link', `<${origin}${cleanPath}.md>; rel="alternate"; type="text/markdown"`);
+
+    const acceptHeader = req.headers.accept || '';
+    const wantsMarkdown = isExplicitMd || acceptHeader.includes('text/markdown');
+
+    if (wantsMarkdown) {
+      res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+      return res.end(docPage.markdown);
+    }
+
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    return res.end(renderDocsHtml(cleanPath, origin));
+  }
 
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
 
