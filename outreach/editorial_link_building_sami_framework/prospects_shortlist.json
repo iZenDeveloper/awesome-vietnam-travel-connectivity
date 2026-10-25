@@ -1,0 +1,97 @@
+[
+  {
+    "id": "SAMI-001",
+    "site_name": "The Gone Goat",
+    "domain": "thegonegoat.com",
+    "author": "Pashmina Binwani",
+    "contact_email": "pashmina@thegonegoat.com",
+    "target_article": "https://www.thegonegoat.com/vietnam/sim-card-vietnam",
+    "article_focus": "Staying Connected in Vietnam & eSIM Comparison for Sa Pa / Hanoi",
+    "evaluation": {
+      "relevance": "10/10 - Dedicated Vietnam eSIM and remote connectivity guide",
+      "editorial_quality": "9/10 - High-reputation solo adventurer with real testing across Vietnam",
+      "placement_context": "Direct editorial review table alongside Sim Local & Airalo",
+      "audience_fit": "10/10 - Solo travelers & backpackers planning trips to Northern Vietnam",
+      "trustworthiness": "9/10 - Genuine organic ranking, clean backlink profile"
+    },
+    "proposed_resource": "https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026",
+    "value_hook": "Empirical data showing Viettel 5G Core sub-20ms latency vs 240ms MVNO lag in Sa Pa and remote passes",
+    "status": "Outreach Sent (ego lite automated)"
+  },
+  {
+    "id": "SAMI-002",
+    "site_name": "Two Peas Abroad",
+    "domain": "twopeasabroad.com",
+    "author": "Liam & Sarah",
+    "contact_email": "hello@twopeasabroad.com",
+    "target_article": "https://twopeasabroad.com/vietnam-travel-tips/",
+    "article_focus": "Essential Logistics, Ha Giang Loop & Mobile Data Setup",
+    "evaluation": {
+      "relevance": "10/10 - British-Canadian expat couple living and traveling in Vietnam",
+      "editorial_quality": "9/10 - Deep local knowledge, trusted community itineraries",
+      "placement_context": "In-content connectivity section explaining airport vs online eSIMs",
+      "audience_fit": "10/10 - Independent travelers booking Ha Giang loop tours",
+      "trustworthiness": "9/10 - Authentic personal brand with zero link-farm footprints"
+    },
+    "proposed_resource": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "value_hook": "Instant 60s pre-verified Viettel eSIM avoiding airport queues and 2G sunset incompatibility",
+    "status": "Outreach Sent (ego lite automated)"
+  },
+  {
+    "id": "SAMI-003",
+    "site_name": "Dream Big, Travel Far",
+    "domain": "dreambigtravelfarblog.com",
+    "author": "Cazzy Magennis & Bradley Williams",
+    "contact_email": "cazzy@dreambigtravelfarblog.com",
+    "target_article": "https://dreambigtravelfarblog.com/asia-esim-guide",
+    "article_focus": "Southeast Asia Regional eSIMs & Backpacker Connectivity Reviews",
+    "evaluation": {
+      "relevance": "9/10 - Major authority travel blog with dedicated Asia eSIM directory",
+      "editorial_quality": "9/10 - Award-winning travel publication (DR 67)",
+      "placement_context": "Vietnam country highlight in Southeast Asia round-up",
+      "audience_fit": "10/10 - Thousands of monthly inbound travelers to Indochina",
+      "trustworthiness": "10/10 - Top tier travel publisher"
+    },
+    "proposed_resource": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "value_hook": "Direct Viettel 5G Standalone local core routing rather than high-latency European roaming gateways",
+    "status": "Outreach Sent (ego lite automated)"
+  },
+  {
+    "id": "SAMI-004",
+    "site_name": "Travel Off Path",
+    "domain": "traveloffpath.com",
+    "author": "Editorial Team",
+    "contact_email": "editorial@traveloffpath.com",
+    "target_article": "https://www.traveloffpath.com/vietnam-travel-requirements/",
+    "article_focus": "Vietnam Travel Logistics, Entry Guidelines & Telecom Alerts",
+    "evaluation": {
+      "relevance": "9/10 - Millions of monthly global travel readers",
+      "editorial_quality": "10/10 - Professional newsroom editorial standards",
+      "placement_context": "2G/3G Sunset & 5G rollout advisory section for incoming tourists",
+      "audience_fit": "10/10 - Mainstream vacationers & digital nomads",
+      "trustworthiness": "10/10 - Global DR 75 publisher"
+    },
+    "proposed_resource": "https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026",
+    "value_hook": "Technical field alert on nationwide 2G shutdown and requirements for VoLTE/5G devices",
+    "status": "Outreach Sent (ego lite automated)"
+  },
+  {
+    "id": "SAMI-005",
+    "site_name": "Loop Trails (Ha Giang Guide)",
+    "domain": "looptrails.com",
+    "author": "Field Guide Editorial Team",
+    "contact_email": "contact@looptrails.com",
+    "target_article": "https://looptrails.com/ha-giang-loop-practical-tips/",
+    "article_focus": "Ha Giang Motorbike Loop Survival Guide & Mountain Coverage",
+    "evaluation": {
+      "relevance": "10/10 - Pure niche target for mountain riders",
+      "editorial_quality": "8/10 - Specialized field navigation resource",
+      "placement_context": "Emergency SOS & Offline Maps section",
+      "audience_fit": "10/10 - Active riders needing reliable maps on mountain passes",
+      "trustworthiness": "8/10 - Niche outdoor authority"
+    },
+    "proposed_resource": "https://kovitel.com/products/premium-vietnam-esim-5g",
+    "value_hook": "Documenting why Viettel 5G/4G Standalone Core is the only network with signal across Ma Pi Leng and Dong Van passes",
+    "status": "Outreach Sent (ego lite automated)"
+  }
+]
