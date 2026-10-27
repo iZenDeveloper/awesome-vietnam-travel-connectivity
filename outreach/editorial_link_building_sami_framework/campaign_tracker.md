@@ -27,4 +27,9 @@
 ### 1. SAMI-002: Liam & Sarah (Two Peas Abroad) — 27/10/2026 17:47
 - **Feedback:** Capped direct on-site partners to protect conversions, but invited Kovitel as a premier brand partner on **Creator Roam** (1,900+ vetted travel creators).
 - **VIP Brand Submission Link:** `https://creatorroam.com/brands/submit/369b1271b5bbb420a5ba7440ba3b0420d304ad7bb2a262aa` (Free listing, zero fee, pre-filled).
-- **Strategic Impact:** Enables direct inbound collaboration with 1,900+ active travel creators looking for eSIM sponsors & field review partners in Southeast Asia.
+- **Execution Status (27/10/2026 22:28):** ✅ **Submitted & Confirmed on Waitlist** via automated ego-browser:
+  - Brand name corrected: `Kovitel`
+  - Offer: Complimentary Viettel 5G Core high-speed eSIM (5GB/day or unlimited) + affiliate commission.
+  - Scope: Nationwide Vietnam (Hanoi, Ha Giang, Da Nang, Hoi An, HCMC, Phu Quoc).
+  - Status: Successfully queued as priority brand on Creator Roam directory.
+- **Follow-up Reply (27/10/2026 22:29):** ✅ Sent warm thank-you confirmation email to Liam & Sarah via `kovitel.outreach@outlook.com`.
