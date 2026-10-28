@@ -14,7 +14,7 @@
 | **3** | **Feedly** | `feedly.com` | **92** | Dofollow Feed Aggregator | 🏆 **HOÀN TẤT & LIVE 100%** | Syndicated Feed Live (`https://kovitel.com/blogs/news.atom`) trong Category "Vietnam Telecom" |
 | **4** | **LinkedIn Company Page** | `linkedin.com` | **98** | Dofollow Article / Bio | ⏳ **Sẵn sàng Payload** | Trang doanh nghiệp "Kovitel Travel Telecom" + Bài viết PR |
 | **5** | **Reddit Profile** | `reddit.com` | **92** | Nofollow / Social Signal | ⏳ **Sẵn sàng Payload** | Profile `u/kovitel_telecom` chia sẻ kinh nghiệm sóng Hà Giang / Sa Pa |
-| **6** | **Twitter / X Profile** | `x.com` | **94** | Nofollow / Entity Signal | ⏳ **Sẵn sàng Payload** | Bio URL + Cập nhật chỉ số Viettel 5G speedtest |
+| **6** | **Twitter / X Profile** | `x.com` | **94** | Nofollow / Entity Signal | 🏆 **HOÀN TẤT & LIVE 100%** | [x.com/alexturner_tech](https://x.com/alexturner_tech) (Profile Website live + Thread reply `@ADLXBT`) |
 | **7** | **Instagram Business** | `instagram.com` | **94** | Nofollow / Bio Link | ⏳ **Sẵn sàng Payload** | Bio Link `kovitel.com` + Highlight hướng dẫn eSIM |
 | **8** | **Muck Rack** | `muckrack.com` | **89** | Dofollow PR Portfolio | ⏳ **Sẵn sàng Payload** | Portfolio Telecom Contributor / Tech Analyst |
 | **9** | **MyAnimeList** | `myanimelist.net` | **89** | Profile Website Link | ⏳ **Sẵn sàng Payload** | User Profile Web Field |
@@ -83,10 +83,17 @@
 
 ---
 
-### 6. Twitter / X Profile (DR 94)
-* **Name:** Kovitel - Vietnam 5G eSIM 🇻🇳
-* **Bio:** *Official Viettel 5G Core eSIM provider for Vietnam travelers. Instant QR delivery, sub-20ms latency, zero KYC. Fast, seamless mobile data nationwide.*
-* **Website:** `https://kovitel.com`
+### 6. Twitter / X Profile & Entity Thread (DR 94) — 🏆 ĐÃ HOÀN THÀNH 100%
+* **Tài khoản chuyên gia X:** [Alex Turner (@alexturner_tech)](https://x.com/alexturner_tech)
+* **Website Profile trực tiếp:** `https://kovitel.com` (Đã lưu & hiển thị công khai trên header hồ sơ)
+* **Bio định vị thực thể:** `Telecom researcher & open-source contributor. Mapping mobile network latency, 5G Core routing & travel connectivity across Vietnam & SE Asia. 📍 Vietnam`
+* **Triển khai Tương tác Kỹ thuật cao (Reply @ADLXBT về AI Knowledge Graphs):**
+  * **Target Tweet:** [ADL (@ADLXBT)](https://x.com/adlxbt/status/2115517958277747086) bàn về việc directories cấp dữ liệu cho web scraper để xây dựng knowledge graph cho AI Search.
+  * **Reply Part 1 (Permalink):** [https://x.com/alexturner_tech/status/2115552304112050494](https://x.com/alexturner_tech/status/2115552304112050494)
+    > *"The link is just the crawl seed."*
+  * **Reply Part 2 (Permalink):** [https://x.com/alexturner_tech/status/2115552810632966232](https://x.com/alexturner_tech/status/2115552810632966232)
+    > *"People still treat directories like 2012 PageRank link juice, but LLMs (Grok, Perplexity) care about entity triangulation. Consistent schema across GitHub/Academia maps the knowledge graph (e.g. Kovitel = Viettel 5G Core)."*
+* **Ảnh bằng chứng xác thực:** `screenshots/x_profile_live_kovitel.png` và `screenshots/x_thread_clean_proof.png`
 
 ---
 
