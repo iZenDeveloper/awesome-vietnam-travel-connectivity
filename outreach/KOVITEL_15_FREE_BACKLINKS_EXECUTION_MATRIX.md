@@ -10,8 +10,8 @@
 | STT | Nền tảng | Domain | DR | Loại Link | Trạng thái | Chi tiết triển khai / URL |
 | :---: | :--- | :--- | :---: | :---: | :---: | :--- |
 | **1** | **GitHub Profile & Ecosystem**| `github.com` | **96** | Dofollow Markdown & Header | 🏆 **HOÀN TẤT & LIVE 100%** | [github.com/iZenDeveloper](https://github.com/iZenDeveloper) (Profile README + Homepage URLs + Topics) |
-| **2** | **Academia.edu** | `academia.edu` | **92** | Dofollow Profile / Paper | 📩 **Đã đăng ký (Chờ confirm email)** | Form submitted `kovitel.outreach@outlook.com`, sẵn sàng upload Whitepaper 5G |
-| **3** | **Feedly** | `feedly.com` | **92** | Dofollow Feed Aggregator | ⚡ **Đã cấu hình RSS Feed** | `feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fkovitel.com%2Fblogs%2Fnews.atom` |
+| **2** | **Academia.edu** | `academia.edu` | **92** | Dofollow Profile / Paper | 🏆 **HOÀN TẤT & LIVE 100%** | [Profile](https://independent.academia.edu/DatNguyen2117) + [Paper 5G Live](https://www.academia.edu/179752359/Empirical_Latency_and_Quality_of_Service_Benchmark_Domestic_5G_Standalone_Core_vs_Roaming_MVNO_Gateways_for_Inbound_International_Travelers_in_Vietnam_2026_) |
+| **3** | **Feedly** | `feedly.com` | **92** | Dofollow Feed Aggregator | 🏆 **HOÀN TẤT & LIVE 100%** | Syndicated Feed Live (`https://kovitel.com/blogs/news.atom`) trong Category "Vietnam Telecom" |
 | **4** | **LinkedIn Company Page** | `linkedin.com` | **98** | Dofollow Article / Bio | ⏳ **Sẵn sàng Payload** | Trang doanh nghiệp "Kovitel Travel Telecom" + Bài viết PR |
 | **5** | **Reddit Profile** | `reddit.com` | **92** | Nofollow / Social Signal | ⏳ **Sẵn sàng Payload** | Profile `u/kovitel_telecom` chia sẻ kinh nghiệm sóng Hà Giang / Sa Pa |
 | **6** | **Twitter / X Profile** | `x.com` | **94** | Nofollow / Entity Signal | ⏳ **Sẵn sàng Payload** | Bio URL + Cập nhật chỉ số Viettel 5G speedtest |
@@ -40,24 +40,27 @@
 
 ---
 
-### 2. Academia.edu (DR 92) — Đăng ký Researcher & Tải Whitepaper
-* **URL Đăng ký:** `https://www.academia.edu/signup`
-* **Thông tin thiết lập Profile:**
-  * **Họ & Tên:** Dat Nguyen
-  * **Email:** `kovitel.outreach@outlook.com`
-  * **Affiliation (Tổ chức):** Kovitel Travel Telecom Research Labs (Vietnam)
-  * **Department:** Telecommunications & Wireless Mobile Networks
-  * **Personal Website:** `https://kovitel.com`
-* **Tài liệu học thuật xuất bản (PDF Asset):**
-  * **Tiêu đề:** *Empirical Latency and Quality of Service Benchmark: Domestic 5G Core vs. Roaming MVNO Gateways for Inbound International Travelers in Vietnam (2026)*.
-  * **Trích dẫn nguồn:** `https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026`
+### 2. Academia.edu (DR 92) — 🏆 ĐÃ HOÀN THÀNH 100%
+* **Trang Profile học thuật công khai:** [https://independent.academia.edu/DatNguyen2117](https://independent.academia.edu/DatNguyen2117)
+* **Bio chính thức:** `Lead Telecom Systems Engineer at Kovitel (https://kovitel.com). Engineering high-performance Viettel 5G Standalone Core network integration, sub-20ms domestic latency, and tourist eSIM architecture across Vietnam.`
+* **Tài liệu nghiên cứu khoa học xuất bản (Live Paper):**
+  * **URL bài viết công khai:** [https://www.academia.edu/179752359/Empirical_Latency_and_Quality_of_Service_Benchmark_Domestic_5G_Standalone_Core_vs_Roaming_MVNO_Gateways_for_Inbound_International_Travelers_in_Vietnam_2026_](https://www.academia.edu/179752359/Empirical_Latency_and_Quality_of_Service_Benchmark_Domestic_5G_Standalone_Core_vs_Roaming_MVNO_Gateways_for_Inbound_International_Travelers_in_Vietnam_2026_)
+  * **File PDF đính kèm:** `https://www.academia.edu/attachments/135160685/download_file` (Title: *Vietnam 5G Core Latency Benchmark 2026 - Kovitel*)
+  * **Canonical Link nhúng trực tiếp:** `https://kovitel.com/blogs/news/viettel-5g-speedtest-vietnam-2026`
+  * **Ảnh bằng chứng xác thực:** `screenshots/academia_profile_proof.png` và `screenshots/academia_paper_proof.png`
 
 ---
 
-### 3. Feedly (DR 92) — Tích hợp RSS Reader Directory
-* **URL:** `https://feedly.com`
-* **RSS Feed URL:** `https://kovitel.com/blogs/news.atom`
-* **Cơ chế:** Đưa nguồn tin của Kovitel vào danh mục công khai của Feedly trong chủ đề *Travel Telecommunications* & *Vietnam Travel Guides*.
+### 3. Feedly Directory & RSS Syndication (DR 92) — 🏆 ĐÃ HOÀN THÀNH 100%
+* **Tài khoản xác thực:** `Dat Nguyen` (Account ID: `5ebbfc15-9a15-4610-9466-de41160934e4`)
+* **Thư mục phân loại:** `Vietnam Telecom` (`user/.../category/1c56fb49-3d27-4971-89f3-61f6422deed6`)
+* **Nguồn cấp RSS tích hợp thành công:** `https://kovitel.com/blogs/news.atom`
+* **Website liên kết:** `https://kovitel.com/blogs/news`
+* **Tiêu đề Feed đồng bộ:** `Kovitel - Vietnam 5G Travel eSIM & Tech News`
+* **Các bài viết blog đã được Feedly index & phân phối:**
+  * *A Complete Guide to Payment Methods on Kovitel*
+  * *Why Choose Viettel eSIM with Kovitel?*
+* **Ảnh bằng chứng xác thực:** `screenshots/feedly_subscribed_proof.png` và `screenshots/feedly_feed_view_proof.png`
 
 ---
 
