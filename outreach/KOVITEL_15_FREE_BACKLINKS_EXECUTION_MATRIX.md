@@ -9,9 +9,9 @@
 
 | STT | Nền tảng | Domain | DR | Loại Link | Trạng thái | Chi tiết triển khai / URL |
 | :---: | :--- | :--- | :---: | :---: | :---: | :--- |
-| **1** | **GitHub Profile README** | `github.com` | **96** | Dofollow Markdown | 🏆 **HOÀN TẤT & LIVE** | [github.com/iZenDeveloper](https://github.com/iZenDeveloper) (Repo `iZenDeveloper/iZenDeveloper`) |
-| **2** | **Academia.edu** | `academia.edu` | **92** | Dofollow Profile / Paper | ⏳ **Sẵn sàng Payload** | Đăng ký Researcher Profile + Tải lên 5G Latency Benchmark Whitepaper |
-| **3** | **Feedly** | `feedly.com` | **92** | Dofollow Feed Aggregator | ⏳ **Sẵn sàng Payload** | Tích hợp RSS `kovitel.com/blogs/news.atom` vào Feedly Public Discovery |
+| **1** | **GitHub Profile & Ecosystem**| `github.com` | **96** | Dofollow Markdown & Header | 🏆 **HOÀN TẤT & LIVE 100%** | [github.com/iZenDeveloper](https://github.com/iZenDeveloper) (Profile README + Homepage URLs + Topics) |
+| **2** | **Academia.edu** | `academia.edu` | **92** | Dofollow Profile / Paper | 📩 **Đã đăng ký (Chờ confirm email)** | Form submitted `kovitel.outreach@outlook.com`, sẵn sàng upload Whitepaper 5G |
+| **3** | **Feedly** | `feedly.com` | **92** | Dofollow Feed Aggregator | ⚡ **Đã cấu hình RSS Feed** | `feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fkovitel.com%2Fblogs%2Fnews.atom` |
 | **4** | **LinkedIn Company Page** | `linkedin.com` | **98** | Dofollow Article / Bio | ⏳ **Sẵn sàng Payload** | Trang doanh nghiệp "Kovitel Travel Telecom" + Bài viết PR |
 | **5** | **Reddit Profile** | `reddit.com` | **92** | Nofollow / Social Signal | ⏳ **Sẵn sàng Payload** | Profile `u/kovitel_telecom` chia sẻ kinh nghiệm sóng Hà Giang / Sa Pa |
 | **6** | **Twitter / X Profile** | `x.com` | **94** | Nofollow / Entity Signal | ⏳ **Sẵn sàng Payload** | Bio URL + Cập nhật chỉ số Viettel 5G speedtest |
